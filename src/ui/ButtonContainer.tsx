@@ -25,7 +25,7 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
       </button>
       <button
         onClick={onPrimaryButtonClick}
-        className="text-white rounded-md bg-orange/50 w-fit custom-2xl:px-[32px] custom-2xl:py-[14px] custom-xl:px-6 custom-xl:py-3 custom-2xl:text-lg text-sm"
+        className="text-white rounded-md bg-orange/50 w-fit custom-2xl:px-[32px] custom-2xl:py-[14px] custom-xl:px-6 px-5 py-3 custom-2xl:text-lg text-sm"
       >
         {primaryButtonText}
       </button>
@@ -34,13 +34,13 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
     <div className="p-3 bg-white rounded-lg">
       <button
         onClick={onPrimaryButtonClick}
-        className="font-semibold text-white rounded-md bg-orange/50 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] custom-xl:px-6 custom-xl:py-3 custom-2xl:text-lg text-sm"
+        className="font-semibold text-white rounded-md bg-orange/50 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm"
       >
         {primaryButtonText}
       </button>
       <button
         onClick={onSecondaryButtonClick}
-        className="font-semibold text-grey/30 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] custom-xl:px-6 custom-xl:py-3 custom-2xl:text-lg text-sm"
+        className="font-semibold text-grey/30 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm"
       >
         {secondaryButtonText}
       </button>

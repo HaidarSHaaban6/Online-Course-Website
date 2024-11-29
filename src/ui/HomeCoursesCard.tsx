@@ -25,7 +25,7 @@ const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
         alt="course image"
         className="object-cover w-full mb-6 rounded-lg img-height"
       />
-      <div className="flex items-center">
+      <div className="flex items-center custom-2xl:mb-[30px] mb-6">
         {infoArray.map((item, index) => (
           <div
             key={index}

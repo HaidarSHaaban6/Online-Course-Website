@@ -10,7 +10,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   children,
 }) => {
   return (
-    <div className="grid sm:grid-cols-[73.7%_26.2%] mb-10 custom-xl:mb-[60px] custom-2xl:mb-[80px]">
+    <div className="grid lg:grid-cols-[73.7%_26.2%] mb-10 custom-xl:mb-[60px] custom-2xl:mb-[80px]">
       <div className="">
         <h2 className="text-[28px] custom-xl:text-[38px] custom-2xl:text-5xl font-semibold text-grey/15 custom-2xl:leading-[72px] custom-xl:leading-[57px] leading-[42px] custom-2xl:mb-[6px] mb-1">
           {title}
@@ -19,7 +19,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           {description}
         </p>
       </div>
-      <div className="flex items-end justify-start mt-5 sm:justify-end sm:mt-0">
+      <div className="flex items-end justify-start mt-5 lg:justify-end lg:mt-0">
         {children}
       </div>
     </div>

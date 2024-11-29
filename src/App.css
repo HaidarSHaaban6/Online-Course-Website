@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Black.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Black.ttf")
+    format("truetype");
 
   font-weight: 900;
 
@@ -11,7 +12,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BlackItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BlackItalic.ttf")
+    format("truetype");
 
   font-weight: 900;
 
@@ -21,7 +23,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf")
+    format("truetype");
 
   font-weight: 700;
 
@@ -31,7 +34,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf")
+    format("truetype");
 
   font-weight: 700;
 
@@ -41,7 +45,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf")
+    format("truetype");
 
   font-weight: 800;
 
@@ -51,7 +56,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBoldItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBoldItalic.ttf")
+    format("truetype");
 
   font-weight: 800;
 
@@ -61,7 +67,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf")
+    format("truetype");
 
   font-weight: 200;
 
@@ -71,7 +78,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLightItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLightItalic.ttf")
+    format("truetype");
 
   font-weight: 200;
 
@@ -81,7 +89,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Italic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Italic.ttf")
+    format("truetype");
 
   font-weight: 400;
 
@@ -91,7 +100,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf")
+    format("truetype");
 
   font-weight: 300;
 
@@ -101,7 +111,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-LightItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-LightItalic.ttf")
+    format("truetype");
 
   font-weight: 300;
 
@@ -111,7 +122,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf")
+    format("truetype");
 
   font-weight: 500;
 
@@ -121,7 +133,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-MediumItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-MediumItalic.ttf")
+    format("truetype");
 
   font-weight: 500;
 
@@ -131,7 +144,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf")
+    format("truetype");
 
   font-weight: 400;
 
@@ -141,7 +155,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf")
+    format("truetype");
 
   font-weight: 600;
 
@@ -151,7 +166,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBoldItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBoldItalic.ttf")
+    format("truetype");
 
   font-weight: 600;
 
@@ -161,7 +177,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Thin.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Thin.ttf")
+    format("truetype");
 
   font-weight: 100;
 
@@ -171,7 +188,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ThinItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ThinItalic.ttf")
+    format("truetype");
 
   font-weight: 100;
 
@@ -804,12 +822,65 @@ video {
   }
 }
 
+.img-height {
+  height: 172px;
+  @media (min-width: 768px) {
+    height: 202px;
+  }
+  @media (min-width: 1440px) {
+    height: 267px;
+  }
+  @media (min-width: 1920px) {
+    height: 380px;
+  }
+}
+
 .z-20 {
   z-index: 20;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-\[49px\] {
+  height: 49px;
 }
 
 .h-\[54px\] {
@@ -820,20 +891,57 @@ video {
   width: 54px;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
   justify-content: center;
 }
 
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-\[4px\] {
@@ -844,8 +952,33 @@ video {
   border-color: #FFFFFF4D;
 }
 
+.border-white\/95 {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 241 243 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#FFFFFF33\] {
   background-color: #FFFFFF33;
+}
+
+.bg-orange\/50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 149 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white\/97 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 248 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white\/99 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 253 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cover {
@@ -856,9 +989,101 @@ video {
   background-position: center;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-\[24px\] {
+  padding: 24px;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.font-vietnam {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-\[42px\] {
+  line-height: 42px;
+}
+
+.text-grey\/15 {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity, 1));
+}
+
+.text-grey\/30 {
+  --tw-text-opacity: 1;
+  color: rgb(76 76 77 / var(--tw-text-opacity, 1));
+}
+
+.text-grey\/35 {
+  --tw-text-opacity: 1;
+  color: rgb(89 89 90 / var(--tw-text-opacity, 1));
+}
+
+.text-grey\/40 {
+  --tw-text-opacity: 1;
+  color: rgb(101 101 103 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -870,7 +1095,72 @@ video {
   cursor: pointer;
 }
 
+@media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:grid-cols-\[73\.7\%_26\.2\%\] {
+    grid-template-columns: 73.7% 26.2%;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:p-\[40px\] {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .custom-xl\:mb-\[60px\] {
+    margin-bottom: 60px;
+  }
+
+  .custom-xl\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .custom-xl\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .custom-xl\:pr-\[30px\] {
+    padding-right: 30px;
+  }
+
+  .custom-xl\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .custom-xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .custom-xl\:leading-\[57px\] {
+    line-height: 57px;
+  }
+}
+
 @media (min-width: 1920px) {
+  .custom-2xl\:mb-\[6px\] {
+    margin-bottom: 6px;
+  }
+
+  .custom-2xl\:mb-\[80px\] {
+    margin-bottom: 80px;
+  }
+
+  .custom-2xl\:h-\[63px\] {
+    height: 63px;
+  }
+
   .custom-2xl\:h-\[72px\] {
     height: 72px;
   }
@@ -881,5 +1171,52 @@ video {
 
   .custom-2xl\:border-\[6px\] {
     border-width: 6px;
+  }
+
+  .custom-2xl\:p-\[50px\] {
+    padding: 50px;
+  }
+
+  .custom-2xl\:px-\[26px\] {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .custom-2xl\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .custom-2xl\:px-\[32px\] {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .custom-2xl\:py-\[14px\] {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .custom-2xl\:py-\[18px\] {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .custom-2xl\:pr-\[30px\] {
+    padding-right: 30px;
+  }
+
+  .custom-2xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .custom-2xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .custom-2xl\:leading-\[72px\] {
+    line-height: 72px;
   }
 }

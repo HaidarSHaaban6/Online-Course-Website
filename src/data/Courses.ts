@@ -1,5 +1,3 @@
-
-
 interface Course  {
     id: number;
     course_title: string;

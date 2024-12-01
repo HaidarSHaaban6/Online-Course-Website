@@ -2,16 +2,20 @@ import { useNavigate } from "react-router-dom";
 
 interface HomeCoursesCardProps {
   img: string;
-  infoArray: string[];
   title: string;
   description: string;
+  course_duration: string;
+  level: string;
+  author: string;
 }
 
 const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
   img,
-  infoArray,
   title,
   description,
+  course_duration,
+  level,
+  author,
 }) => {
   const navigate = useNavigate();
   const handleCourseButton = () => {
@@ -25,19 +29,16 @@ const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
         alt="course image"
         className="object-cover w-full mb-6 rounded-lg img-height"
       />
-      <div className="flex items-center custom-2xl:mb-[30px] mb-6">
-        {infoArray.map((item, index) => (
-          <div
-            key={index}
-            className={`${
-              index === infoArray.length - 1
-                ? "text-grey/15 text-xl font-medium ml-auto"
-                : "py-4 border rounded-lg border-white/95 text-grey/30 px-[10px] mr-[10px]"
-            }`}
-          >
-            {item}
-          </div>
-        ))}
+      <div className="lg:flex lg:items-center custom-2xl:mb-[30px] mb-6">
+        <p className="py-4 border rounded-lg border-white/95 text-grey/30 px-[10px] mr-[10px] inline-block text-sm custom-2xl:text-lg">
+          {course_duration}
+        </p>
+        <p className="py-4 border rounded-lg border-white/95 text-grey/30 px-[10px] mr-[10px] inline-block text-sm custom-2xl:text-lg">
+          {level}
+        </p>
+        <p className="font-medium custom-2xl:text-xl md:ml-auto text-grey/15 mt-[14px] lg:mt-0">
+          {author}
+        </p>
       </div>
       <h2 className="text-2xl font-semibold text-grey/15 mb-[14px]">{title}</h2>
       <p className="text-grey/40 mb-[30px]">{description}</p>

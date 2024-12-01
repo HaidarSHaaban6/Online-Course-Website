@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface ButtonContainerProps {
   primaryButtonText: string;
   secondaryButtonText: string;
@@ -15,16 +17,28 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
   onSecondaryButtonClick,
   isReversed = false, // Default To False If Not Passed
 }) => {
+  const [isPrimaryActive, setIsPrimaryActive] = useState(true);
+
+  const handlePrimaryClick = () => {
+    setIsPrimaryActive(true);
+    onPrimaryButtonClick();
+  };
+
+  const handleSecondaryClick = () => {
+    setIsPrimaryActive(false);
+    onSecondaryButtonClick();
+  };
+
   return isReversed ? (
     <div>
       <button
-        onClick={onSecondaryButtonClick}
+        onClick={onPrimaryButtonClick}
         className="text-grey/30 w-fit custom-2xl:pr-[30px] custom-2xl:py-[14px] custom-xl:pr-[30px] py-3 pr-5 custom-2xl:text-lg text-sm"
       >
         {secondaryButtonText}
       </button>
       <button
-        onClick={onPrimaryButtonClick}
+        onClick={onSecondaryButtonClick}
         className="text-white rounded-md bg-orange/50 w-fit custom-2xl:px-[32px] custom-2xl:py-[14px] custom-xl:px-6 px-5 py-3 custom-2xl:text-lg text-sm"
       >
         {primaryButtonText}
@@ -33,14 +47,22 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
   ) : (
     <div className="p-3 bg-white rounded-lg">
       <button
-        onClick={onPrimaryButtonClick}
-        className="font-semibold text-white rounded-md bg-orange/50 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm"
+        onClick={handlePrimaryClick}
+        className={`font-semibold w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm ${
+          isPrimaryActive
+            ? "text-white rounded-md bg-orange/50"
+            : "text-grey/30"
+        }`}
       >
         {primaryButtonText}
       </button>
       <button
-        onClick={onSecondaryButtonClick}
-        className="font-semibold text-grey/30 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm"
+        onClick={handleSecondaryClick}
+        className={`font-semibold text-grey/30 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm ${
+          !isPrimaryActive
+            ? "text-white rounded-md bg-orange/50"
+            : "text-grey/30"
+        }`}
       >
         {secondaryButtonText}
       </button>
@@ -70,8 +92,8 @@ export default ButtonContainer;
 //
 // <ButtonContainer
 //   primaryButtonText="Monthly"
-//   secondaryButtonText="Yearly"
-//   onPrimaryButtonClick={() => test()}
-//   onSecondaryButtonClick={() => test()}  -- In This Case It Will Like Nav Buttons --
+//   secondaryButtonText="Yearly"           --// In This Case It Will Look Like Nav Buttons //--
+//   onPrimaryButtonClick={() => test()}    --// When isReversed={true}, The bg-colors Will Not Toggle //--
+//   onSecondaryButtonClick={() => test()}
 //   isReversed={true}
 // />

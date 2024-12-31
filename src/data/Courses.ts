@@ -31,7 +31,7 @@ interface Lessons {
   lesson_duration: string;
 }
 
-const courses: Course[] = [
+export const courses: Course[] = [
   {
     id: 1,
     course_title: "Web Design Fundamentals",

@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { TiTick } from "react-icons/ti";
-import { SignUpData } from "../pages/SignUpPage";
 
-interface CheckboxProps {
+interface CheckboxProps<T> {
   text: React.ReactNode;
   name: string;
   data: boolean;
   error: string;
-  setData: React.Dispatch<React.SetStateAction<SignUpData>>;
+  setData: React.Dispatch<React.SetStateAction<T>>;
 }
 
-const Checkbox = ({ text, name, data, error, setData }: CheckboxProps) => {
+const Checkbox =<T, > ({ text, name, data, error, setData }: CheckboxProps<T>) => {
   return (
     <div>
       <div className="flex items-center gap-x-2">

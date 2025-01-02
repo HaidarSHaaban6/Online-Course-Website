@@ -1,5 +1,4 @@
 import ButtonContainer from "../ui/ButtonContainer";
-import CustomButton from "../ui/CustomButton";
 import HomeCoursesCard from "../ui/HomeCoursesCard";
 import SectionTitle from "../ui/SectionTitle";
 import test from "./../assets/img/Courses/Image.png";
@@ -12,6 +11,7 @@ const HomePage = () => {
     console.log("test");
     return "hi";
   }
+  
   return (
     <div className="custom-container">
       <div className="grid grid-cols-1 sm:grid-cols-2">

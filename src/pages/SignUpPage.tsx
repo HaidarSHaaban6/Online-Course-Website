@@ -66,7 +66,7 @@ const SignUpPage = () => {
             handleOnclick={handleRegister}
           >
             <div className="flex flex-col gap-y-5 custom-2xl:gap-y-6">
-              <LabeledInput
+              <LabeledInput<SignUpData>
                 name="fullname"
                 label="First Name"
                 placeholder="Enter Your First Name"
@@ -75,7 +75,7 @@ const SignUpPage = () => {
                 setData={setSignUpData}
                 data={signUpData.fullname}
               />
-              <LabeledInput
+              <LabeledInput<SignUpData>
                 name="email"
                 label="Email"
                 placeholder="Enter Your Email"
@@ -84,7 +84,7 @@ const SignUpPage = () => {
                 setData={setSignUpData}
                 data={signUpData.email}
               />
-              <LabeledInput
+              <LabeledInput<SignUpData>
                 name="password"
                 label="Password"
                 placeholder="Enter Your Password"
@@ -93,7 +93,7 @@ const SignUpPage = () => {
                 setData={setSignUpData}
                 data={signUpData.password}
               />
-              <Checkbox
+              <Checkbox<SignUpData>
                 text={
                   <span className="font-vietnam text-base font-normal text-grey/40">
                     I agree with <span className="underline">Terms of Use</span>{" "}

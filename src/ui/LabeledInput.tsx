@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
-import { SignUpData } from "../pages/SignUpPage";
 
-interface LabeledInputProps {
+interface LabeledInputProps<T> {
   label: string;
   inputType: string;
   placeholder: string;
   name: string;
   error: string;
-  setData: React.Dispatch<React.SetStateAction<SignUpData>>;
+  setData: React.Dispatch<React.SetStateAction<T>>;
   data: string;
 }
-const LabeledInput = ({
+const LabeledInput =<T, > ({
   label,
   inputType,
   placeholder,
@@ -19,7 +18,7 @@ const LabeledInput = ({
   error,
   setData,
   data,
-}: LabeledInputProps) => {
+}: LabeledInputProps<T>) => {
   const [showPass, setShowPass] = useState(false);
   const setNewValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     setData((prev) => ({ ...prev, [name]: e.target.value }));

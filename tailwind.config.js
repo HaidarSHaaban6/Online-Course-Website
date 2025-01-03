@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '1': '1px',
+        
+      },
+      width:{
+        "10.5/12":"88.81%",
+        "9.5/12":"79.23%",
+        "3.5/12":"25.5%",
+        "1.5/6":"31.9%",
+      },
       colors: {
         // Absolute Colors :
         "black-color": "#000",
@@ -41,6 +51,8 @@ module.exports = {
         "custom-2xl": "1920px",
         // Laptop Screen :
         "custom-xl": "1440px",
+         // Mobile Screen :
+         "custom-mobile": "390px",
       },
       fontFamily: {
         vietnam: ['"Be Vietnam Pro"', "sans-serif"],

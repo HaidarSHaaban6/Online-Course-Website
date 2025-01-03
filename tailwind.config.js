@@ -34,6 +34,7 @@ module.exports = {
         "grey/40": "#656567",
         "grey/60": "#98989A",
         "grey/70": "#B3B3B3",
+        "grey/90": "#F7F7F8"
       },
       screens: {
         // Desktop Screen :

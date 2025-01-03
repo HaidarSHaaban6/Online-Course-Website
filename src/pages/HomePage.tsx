@@ -1,4 +1,4 @@
 const HomePage = () => {
-  return <div className="bg-white/97"></div>;
+  return <div></div>;
 };
 export default HomePage;

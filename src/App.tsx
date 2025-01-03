@@ -1,7 +1,11 @@
 import Navigation from "./navigation/Navigation";
 
 function App() {
-  return <Navigation />;
+  return (
+    <div className="bg-grey/90">
+      <Navigation />
+    </div>
+  );
 }
 
 export default App;

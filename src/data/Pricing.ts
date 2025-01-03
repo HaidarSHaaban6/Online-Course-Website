@@ -49,7 +49,7 @@ const pricing: Pricing[] = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Pro Plan",
     mounthly_plan_fee: 79,
     yearly_plan_fee: 799,

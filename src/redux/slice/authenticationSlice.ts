@@ -8,10 +8,13 @@ export interface initialStateValues {
   error: User | null;
 }
 
+
+
+
 const initialState: initialStateValues = {
   users: [
     {
-      fullName: "Fadi Noumih",
+      fullName: "Fadi Noumih 18",
       email: "fadinoumih18@gmail.com",
       password: "12345678",
     },
@@ -20,7 +23,7 @@ const initialState: initialStateValues = {
   error: null,
 };
 
-const authSlice = createSlice({
+const authenticationSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
@@ -63,5 +66,5 @@ const authSlice = createSlice({
   },
 });
 
-export const { registerUser, signUserIn, logUserOut } = authSlice.actions;
-export default authSlice;
+export const { registerUser, signUserIn, logUserOut } = authenticationSlice.actions;
+export default authenticationSlice;

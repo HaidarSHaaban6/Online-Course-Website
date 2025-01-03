@@ -28,6 +28,7 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
     setIsPrimaryActive(false);
     onSecondaryButtonClick();
   };
+  
 
   return isReversed ? (
     <div>

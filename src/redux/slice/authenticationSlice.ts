@@ -30,26 +30,43 @@ const initialState: initialStateValues = {
   error: null,
 };
 
+// if there is a user stored in the localstorage add it to the state and remember the user
+const addCurrentUserIfExists = () => {
+  const currentUser = AuthService.getRememberedUser();
+  if (currentUser) {
+    initialState.currentUser = currentUser;
+    const userExist = initialState.users.find(
+      (u) => currentUser.email == u.email
+    );
+    if (!userExist) initialState.users.push(currentUser);
+  }
+};
+addCurrentUserIfExists();
+
 const authenticationSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
     registerUser: (state, action) => {
-      const { errors, errorsExits } = AuthService.SignUserIn(
+      // validating the fields
+      const { errors, errorsExits } = AuthService.SignUserUn(
         state.users,
         action.payload
       );
+
+      // set the errors if exist or add the new user if not
       if (errorsExits) state.error = errors;
       else {
         state.users.push(action.payload);
         state.currentUser = action.payload;
         state.error = null;
-        console.log(JSON.parse(JSON.stringify(state.users)), state.currentUser);
-        
+
+        //remembering the user
+        AuthService.rememberUser(action.payload);
       }
     },
     signUserIn: (state, action) => {
-      const user: User = action.payload;
+      const user: User = action.payload.user;
       const { errors, errorsExits } = AuthService.logUserIn(
         user.email,
         user.password
@@ -61,17 +78,21 @@ const authenticationSlice = createSlice({
         const userData: User | undefined = state.users.find(
           (u) => user.email === u.email && user.password === u.password
         );
-        console.log(userData, state.users);
-        
-        if (userData) state.currentUser = userData;
-        else throw new Error("email or password is not valid");
+        if (userData) {
+          state.currentUser = userData;
+          if (action.payload.rememberMe) {
+            AuthService.rememberUser(userData);
+          }
+        } else throw new Error("email or password is not valid");
       }
     },
     logUserOut: (state) => {
       state.currentUser = null;
+      AuthService.logRememberedUserOut();
     },
   },
 });
 
-export const { registerUser, signUserIn, logUserOut } = authenticationSlice.actions;
+export const { registerUser, signUserIn, logUserOut } =
+  authenticationSlice.actions;
 export default authenticationSlice;

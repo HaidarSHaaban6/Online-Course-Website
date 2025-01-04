@@ -80,7 +80,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
                   style={{ backgroundColor: color.current }}
                   onClick={() => setPopUp(!popUp)}
                 >
-                  <p className="text-xl font-black text-white">
+                  <p className="text-xl font-black text-white uppercase">
                     {currentUser.fullName[0]}
                   </p>
                   {popUp && (

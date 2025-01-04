@@ -32,8 +32,11 @@ const LoginPage = () => {
     try {
       dispatch(
         signUserIn({
-          email: logIn.email,
-          password: logIn.password,
+          user: {
+            email: logIn.email,
+            password: logIn.password,
+          },
+          rememberMe: logIn.rememberMe,
         })
       );
       setLogInError("");

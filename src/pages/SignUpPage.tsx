@@ -3,10 +3,10 @@ import StudentsTestimonials from "../components/StudentsTestimonials";
 import AuthForm from "../ui/AuthForm";
 import LabeledInput from "../ui/LabeledInput";
 import { useDispatch, useSelector } from "react-redux";
-import { registerUser } from "../redux/Slice/AuthSlice";
 import { RootState } from "../redux/store";
 import { useNavigate } from "react-router-dom";
 import Checkbox from "../ui/Checkbox";
+import { registerUser } from "../redux/slice/authenticationSlice";
 
 export interface SignUpData {
   fullname: string;

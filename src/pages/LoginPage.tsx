@@ -6,7 +6,7 @@ import Checkbox from "../ui/Checkbox";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { RootState } from "../redux/store";
-import { signUserIn } from "../redux/Slice/AuthSlice";
+import { signUserIn } from "../redux/slice/authenticationSlice";
 
 export interface LogInData {
   email: string;

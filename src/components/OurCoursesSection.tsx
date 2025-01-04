@@ -1,7 +1,7 @@
 // Import Section :
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getHomeCourses } from "./../redux/slice/coursesSlice";
+import { getHomeCourses } from "../redux/slice/coursesSlice";
 import { RootState } from "./../redux/store";
 import SectionTitle from "../ui/SectionTitle";
 import CustomButton from "../ui/CustomButton";

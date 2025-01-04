@@ -8,14 +8,21 @@ export interface initialStateValues {
   error: User | null;
 }
 
-
-
-
 const initialState: initialStateValues = {
   users: [
     {
-      fullName: "Fadi Noumih 18",
+      fullName: "Fadi Noumih",
       email: "fadinoumih18@gmail.com",
+      password: "12345678",
+    },
+    {
+      fullName: "Haidar Shabaan",
+      email: "haidarshabaaan@gmail.com",
+      password: "12345678",
+    },
+    {
+      fullName: "Hala Alhassanieh",
+      email: "halaalhassanieh@gmail.com",
       password: "12345678",
     },
   ],

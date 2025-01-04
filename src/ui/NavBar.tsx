@@ -26,7 +26,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
   const currentUser = useSelector((state: RootState) => state.auth.currentUser);
 
   return (
-    <div className="py-3.5 w-full bg-white/97 lg:py-4 custom-2xl:py-5 top-0 sticky z-50">
+    <div className="py-3.5 w-full bg-white/97 lg:py-4 custom-2xl:py-5 top-0 sticky z-50 font-vietnam">
       <div className="custom-container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-[50px]">

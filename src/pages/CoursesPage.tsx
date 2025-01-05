@@ -1,5 +1,7 @@
+import CoursePageSection from "../components/CoursesPageSection";
+
 const CoursesPage = () => {
-  return <div>Courses Page</div>;
+  return <CoursePageSection />;
 };
 
 export default CoursesPage;

@@ -20,7 +20,7 @@ export const PublicRoutes: RouteObject[] = [
     element: <ContactPage />,
   },
   {
-    path: "/coursesopen",
+    path: "/coursesopen/:id",
     element: <CoursesOpenPage />,
   },
   {

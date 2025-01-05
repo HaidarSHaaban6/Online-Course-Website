@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import courses from "./../../data/Courses";
+import courses from "../../data/Courses";
 
 // Define The Data Structure For a Lesson Info
 interface Lesson {

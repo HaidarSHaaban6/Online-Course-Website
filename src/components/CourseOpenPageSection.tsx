@@ -1,7 +1,7 @@
 // Import Section :
 import { useDispatch, useSelector } from "react-redux"; // Import reacts-redux
 import { useEffect } from "react"; // Import useEffect
-import { getOpenCourse } from "../redux/Slice/coursesSlice";
+import { getOpenCourse } from "../redux/slice/coursesSlice";
 import { RootState } from "../redux/store"; // Import RootState
 import { useParams } from "react-router-dom"; // Import useParams
 import Video from "../ui/Video"; // Import Video Component

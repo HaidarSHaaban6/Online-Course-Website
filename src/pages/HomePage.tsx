@@ -4,8 +4,8 @@ import OurCoursesSection from "../components/OurCoursesSection";
 const HomePage = () => {
   return (
     <div>
-      <OurCoursesSection />
       <BenefitsSection />
+      <OurCoursesSection />
     </div>
   );
 };

@@ -67,8 +67,9 @@ const BenefitsSection = () => {
       </SectionTitle>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {benefitData.length > 0 ? (
-          benefitData.map((benefit) => (
+          benefitData.map((benefit, index) => (
             <BenefitsCard
+              key={index}
               number={String(benefit.id)}
               title={benefit.title}
               description={benefit.description}

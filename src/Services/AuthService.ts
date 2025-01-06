@@ -1,10 +1,14 @@
 import { User } from "../data/interfaces";
 
 class AuthService {
+  // function (string) => boolean
+  // used to make sure that the string passed is an email pattern
   private static isValidEmail(email: string) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
   }
+  // function (string) => string
+  //used to validate the string passed to match the password requirements
   private static validatePassword(password: string) {
     let error = "";
     if (password.length == 0) {
@@ -17,7 +21,9 @@ class AuthService {
     return error;
   }
 
-  public static SignUserIn(users: User[], loginUser: User) {
+  // function (user[], user) => {errors, boolean}
+  // this function is used to validate the signing up fields requirments
+  public static SignUserUn(users: User[], loginUser: User) {
     // the errors messages
     let errors: User = {
       fullName: "",
@@ -57,6 +63,8 @@ class AuthService {
     return { errors, errorsExits };
   }
 
+  // function (user[], user) => {errors, boolean}
+  // this function is used to validate the logging in fields requirments
   public static logUserIn(email: string, password: string) {
     let errors = {
       fullName: "",
@@ -84,6 +92,20 @@ class AuthService {
     }
 
     return { errors, errorsExits };
+  }
+
+  public static rememberUser(user: User) {
+    localStorage.setItem("currentUser", JSON.stringify(user));
+  }
+
+  public static getRememberedUser() {
+    const storedUser = localStorage.getItem("currentUser");
+    const user = storedUser ? JSON.parse(storedUser) : null;
+    return user;
+  }
+
+  public static logRememberedUserOut() {
+    localStorage.removeItem("currentUser");
   }
 }
 

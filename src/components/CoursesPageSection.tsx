@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from "react-redux"; // Import react-redux
 import { useEffect } from "react"; // Import react
 import PageTitle from "../ui/PageTitle"; // Import PageTitle Component
-import { getMainCourse } from "./../redux/Slice/coursesSlice";
+import { getMainCourse } from "./../redux/slice/coursesSlice";
 import { RootState } from "../redux/store"; // Import RootState
 
 // CoursePageSection Component

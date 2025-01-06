@@ -21,7 +21,7 @@ const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
 }) => {
   const navigate = useNavigate();
   const handleCourseButton = (id: number) => {
-    navigate(`/coursesopen/${id}`);
+    navigate(`/courses/${id}`);
   };
 
   return (

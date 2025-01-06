@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 interface HomeCoursesCardProps {
+  id: number;
   img: string;
   title: string;
   description: string;
@@ -10,6 +11,7 @@ interface HomeCoursesCardProps {
 }
 
 const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
+  id,
   img,
   title,
   description,
@@ -18,12 +20,12 @@ const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
   author,
 }) => {
   const navigate = useNavigate();
-  const handleCourseButton = () => {
-    navigate("/coursesopen");
+  const handleCourseButton = (id: number) => {
+    navigate(`/coursesopen/${id}`);
   };
 
   return (
-    <div className="custom-2xl:p-[50px] md:p-[40px] p-[24px] font-vietnam bg-white">
+    <div className="custom-2xl:p-[50px] md:p-[40px] p-[24px] font-vietnam bg-white rounded-[10px] custom-2xl:rounded-xl">
       <img
         src={img}
         alt="course image"
@@ -43,7 +45,9 @@ const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
       <h2 className="text-2xl font-semibold text-grey/15 mb-[14px]">{title}</h2>
       <p className="text-grey/40 mb-[30px]">{description}</p>
       <button
-        onClick={handleCourseButton}
+        onClick={() => {
+          handleCourseButton(id);
+        }}
         className="w-full bg-white/97 text-grey/15 custom-2xl:h-[63px] h-[49px] font-medium"
       >
         Get it Now

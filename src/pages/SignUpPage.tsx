@@ -49,9 +49,9 @@ const SignUpPage = () => {
 
   return (
     <div className="custom-container">
-      <div className="flex py-20 flex-wrap">
+      <div className="flex py-[50px] lg:py-[80px] custom-2xl:py-[100px] flex-wrap">
         <div className="w-full lg:w-[55%] relative order-2 lg:order-1">
-          <div className="sticky top-10 pt-[50px] lg:pt-0">
+          <div className="sticky top-28 pt-[50px] lg:pt-0">
             <StudentsTestimonials />
           </div>
         </div>

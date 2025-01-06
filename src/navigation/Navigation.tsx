@@ -9,11 +9,15 @@ const Navigation = () => {
   const router = createBrowserRouter([
     {
       element: <MainLayout />,
-      children: PublicRoutes,
-    },
-    {
-      element: <MustNotBeLoggedIn />,
-      children: AuthRoutes,
+      children: [
+        {
+          children: PublicRoutes,
+        },
+        {
+          element: <MustNotBeLoggedIn />,
+          children: AuthRoutes,
+        },
+      ],
     },
     {
       path: "*",

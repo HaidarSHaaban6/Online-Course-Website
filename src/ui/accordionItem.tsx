@@ -18,21 +18,17 @@ const AccordionItem = () => {
           custom-2xl:gap-[50px] 
           custom-xl:gap-10  
           custom-mobile:gap-5 
-         
         ">
-
           <div className="flex justify-between items-center border-b-1 border-white/95
-
                 custom-2xl:px-[50px] custom-2xl:py-[30px]
                 custom-xl:px-[50px] custom-xl:py-[30px]
                 custom-mobile:px-6 custom-mobile:py-5
-
           ">
             <div className="text-grey/15  font-medium 
-                          custom-2xl:text-xl custom2xl:leading-[30px]
-                          custom-xl:text-lg 
-                          custom-mobile:text-base 
-                       ">{e.question}</div>
+                 custom-2xl:text-xl custom2xl:leading-[30px]
+                 custom-xl:text-lg 
+                 custom-mobile:text-base 
+                 ">{e.question}</div>
             <button
               className="bg-orange/95 transition-transform duration-300 ease-in-out rounded-md gap-[10px] p-3"
               onClick={() => toggle(i)}

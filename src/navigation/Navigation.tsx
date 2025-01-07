@@ -1,12 +1,11 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import { PublicRoutes } from "./routes/PublicRoutes";
 import { AuthRoutes } from "./routes/AuthRoutes";
 import MustNotBeLoggedIn from "./layouts/MustNotBeLoggedIn";
 import NotFound from "../pages/NotFound";
+import { PrivateRoutes } from "./routes/PrivateRoutes";
+import MustBeAnAdmin from "./layouts/MustBeAnAdmin";
 
 const Navigation = () => {
   const router = createBrowserRouter([
@@ -19,6 +18,10 @@ const Navigation = () => {
         {
           element: <MustNotBeLoggedIn />,
           children: AuthRoutes,
+        },
+        {
+          element: <MustBeAnAdmin />,
+          children: PrivateRoutes,
         },
       ],
     },

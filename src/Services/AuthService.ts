@@ -113,6 +113,10 @@ class AuthService {
   public static logRememberedUserOut() {
     localStorage.removeItem("currentUser");
   }
+
+  public static isUserAnAdmin(user: User) {
+    return user.email == "fadinoumih18@gmail.com";
+  }
 }
 
 export default AuthService;

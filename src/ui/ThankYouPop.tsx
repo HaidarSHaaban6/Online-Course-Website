@@ -6,7 +6,7 @@ const ThankYouPop = () => {
       <div className="flex flex-col items-center">
         <FaEnvelopeOpenText className="text-6xl text-orange/70 mb-10 animate-bounce" />
         <p className="text-3xl font-semibold text-grey/15">
-          our message has been received
+          your message has been received
         </p>
         <p className="text-xl text-grye/20">and will be reviewed promptly</p>
       </div>

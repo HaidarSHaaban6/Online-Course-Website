@@ -4,9 +4,13 @@ import NavBar, { LinkData } from "../../ui/NavBar";
 import Banner from "../../components/Banner";
 import logo from "./../../assets/img/Logo.png";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
+import AuthService from "../../Services/AuthService";
 
 // to wrap the public pages with NavBar and Footer
 const MainLayout = () => {
+  const currentUser = useSelector((state: RootState) => state.auth.currentUser);
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,6 +37,11 @@ const MainLayout = () => {
       link: "/contact",
     },
   ];
+  if (currentUser && AuthService.isUserAnAdmin(currentUser))
+    linkData.push({
+      text: "Dashboard",
+      link: "/dashboard",
+    });
 
   return (
     <div className="bg-white/97 min-h-screen">

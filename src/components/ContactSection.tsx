@@ -64,7 +64,7 @@ const ContactSection = () => {
   }, [success]);
 
   return (
-    <div>
+    <div className="mb-[50px] lg:mb-20 custom-2xl:mb-[150px]">
       <ConfittiEffect
         count={300}
         widthVariations={widthVariations}

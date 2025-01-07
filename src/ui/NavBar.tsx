@@ -54,11 +54,15 @@ const NavBar = ({ logo, links }: NavBarProps) => {
                 <NavLink
                   to={element.link}
                   key={index}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-sm text-grey/15 duration-300 rounded-md py-3 px-5 bg-white/95"
-                      : "text-sm text-grey/15 duration-300"
+                  className={({ isActive }) => `text-sm text-grey/15 duration-300 
+                  ${
+                    element.link == "/dashboard" && " text-orange/50 "
                   }
+                    ${
+                      isActive
+                        ? " rounded-md py-3 px-5 bg-white/95"
+                        : ""
+                    }`}
                   onClick={() => setNavShow(!navShow)}
                 >
                   {element.text}

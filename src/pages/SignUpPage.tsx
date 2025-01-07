@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { useNavigate } from "react-router-dom";
 import Checkbox from "../ui/Checkbox";
-import { registerUser } from "../redux/slice/authenticationSlice";
+import { registerUser, resetErrors } from "../redux/slice/authenticationSlice";
 
 export interface SignUpData {
   fullname: string;
@@ -46,6 +46,9 @@ const SignUpPage = () => {
       navigate("/");
     }
   }, [currentUser]);
+  useEffect(() => {
+    dispatch(resetErrors());
+  }, []);
 
   return (
     <div className="custom-container">

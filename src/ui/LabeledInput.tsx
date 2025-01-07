@@ -34,7 +34,7 @@ const LabeledInput =<T, > ({
       </label>
       {inputType == "password" ? (
         <div className="bg-white/99 border border-white/95 px-5 py-3 flex items-center">
-          {showPass ? (
+          {!showPass ? (
             <>
               <input
                 type="password"

@@ -1,7 +1,8 @@
 // Import Section :
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getHomeCourses } from "./../redux/Slice/coursesSlice";
+
+import { getHomeCourses } from "./../redux/slice/coursesSlice";
 import { RootState } from "./../redux/store";
 import SectionTitle from "../ui/SectionTitle";
 import CustomButton from "../ui/CustomButton";
@@ -34,7 +35,7 @@ const OurCoursesSection = () => {
   }, [dispatch]);
 
   return (
-    <div className="custom-container">
+    <div className="custom-container mt-[50px] custom-xl:mt-[100px]">
       <SectionTitle title={title} description={description}>
         <CustomButton btnText={btnText} functionality={handleBtnClick} />
       </SectionTitle>

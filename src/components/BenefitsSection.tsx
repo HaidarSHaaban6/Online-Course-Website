@@ -8,7 +8,7 @@ import {
   getMainBenefitData,
   getAllBenefitData,
   BenefitType,
-} from "./../redux/Slice/benefitsSlice";
+} from "./../redux/slice/benefitsSlice";
 import BenefitsCard from "../ui/BenefitsCard";
 
 const BenefitsSection = () => {
@@ -65,10 +65,11 @@ const BenefitsSection = () => {
           functionality={toggleBenefitData}
         />
       </SectionTitle>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 custom-xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {benefitData.length > 0 ? (
-          benefitData.map((benefit) => (
+          benefitData.map((benefit, index) => (
             <BenefitsCard
+              key={index}
               number={String(benefit.id)}
               title={benefit.title}
               description={benefit.description}

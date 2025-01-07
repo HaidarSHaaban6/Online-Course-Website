@@ -3,10 +3,10 @@ import StudentsTestimonials from "../components/StudentsTestimonials";
 import AuthForm from "../ui/AuthForm";
 import LabeledInput from "../ui/LabeledInput";
 import { useDispatch, useSelector } from "react-redux";
-import { registerUser } from "../redux/Slice/AuthSlice";
 import { RootState } from "../redux/store";
 import { useNavigate } from "react-router-dom";
 import Checkbox from "../ui/Checkbox";
+import { registerUser } from "../redux/slice/authenticationSlice";
 
 export interface SignUpData {
   fullname: string;
@@ -49,9 +49,9 @@ const SignUpPage = () => {
 
   return (
     <div className="custom-container">
-      <div className="flex py-20 flex-wrap">
+      <div className="flex py-[50px] lg:py-[80px] custom-2xl:py-[100px] flex-wrap">
         <div className="w-full lg:w-[55%] relative order-2 lg:order-1">
-          <div className="sticky top-10 pt-[50px] lg:pt-0">
+          <div className="sticky top-28 pt-[50px] lg:pt-0">
             <StudentsTestimonials />
           </div>
         </div>

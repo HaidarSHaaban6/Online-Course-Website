@@ -3,9 +3,15 @@ import { User } from "../data/interfaces";
 class AuthService {
   // function (string) => boolean
   // used to make sure that the string passed is an email pattern
-  private static isValidEmail(email: string) {
+  public static isValidEmail(email: string) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
+  }
+  // function (string) => boolean
+  // used to make sure that the string passed is a Syrian phone number pattern
+  public static isValidPhoneNumber(phoneNumber: string) {
+    const phonePattern = /^\+9639\d{8}$/;
+    return phonePattern.test(phoneNumber);
   }
   // function (string) => string
   //used to validate the string passed to match the password requirements

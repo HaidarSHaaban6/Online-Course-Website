@@ -10,7 +10,7 @@ interface LabeledInputProps<T> {
   setData: React.Dispatch<React.SetStateAction<T>>;
   data: string;
 }
-const LabeledInput =<T, > ({
+const LabeledInput = <T,>({
   label,
   inputType,
   placeholder,
@@ -20,7 +20,9 @@ const LabeledInput =<T, > ({
   data,
 }: LabeledInputProps<T>) => {
   const [showPass, setShowPass] = useState(false);
-  const setNewValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const setNewValue = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setData((prev) => ({ ...prev, [name]: e.target.value }));
   };
 
@@ -28,12 +30,13 @@ const LabeledInput =<T, > ({
     <div className="flex flex-col">
       <label
         htmlFor={name}
-        className="font-meduim text-base font-vietnam mb-2.5"
+        className="font-meduim text-base font-vietnam mb-2.5 
+        custom-2xl:text-lg custom-2xl:mb-4"
       >
         {label}
       </label>
       {inputType == "password" ? (
-        <div className="bg-white/99 border border-white/95 px-5 py-3 flex items-center">
+        <div className="bg-white/99 border border-white/95 p-5 custom-2xl:py-6 custom-2xl:text-lg flex items-center">
           {!showPass ? (
             <>
               <input
@@ -66,17 +69,32 @@ const LabeledInput =<T, > ({
             </>
           )}
         </div>
+      ) : inputType == "textarea" ? (
+        <textarea
+          className="bg-white/99 border border-white/95 p-5 custom-2xl:py-6 custom-2xl:text-lg outline-0"
+          name={name}
+          id={name}
+          value={data}
+          onChange={(e) => setNewValue(e)}
+          placeholder={placeholder}
+          rows={4}
+          style={{resize: "none"}}
+        ></textarea>
       ) : (
         <input
           type={inputType}
-          className="bg-white/99 border border-white/95 px-6 py-3 outline-0"
+          className="bg-white/99 border border-white/95 p-5 custom-2xl:py-6 custom-2xl:text-lg outline-0"
           placeholder={placeholder}
           value={data}
           onChange={(e) => setNewValue(e)}
           id={name}
         />
       )}
-      {error? <p className="font-vietnam text-base font-normal text-red-500">{error}</p> : null}
+      {error ? (
+        <p className="font-vietnam text-base font-normal text-red-500">
+          {error}
+        </p>
+      ) : null}
     </div>
   );
 };

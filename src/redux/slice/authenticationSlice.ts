@@ -90,9 +90,12 @@ const authenticationSlice = createSlice({
       state.currentUser = null;
       AuthService.logRememberedUserOut();
     },
+    resetErrors: (state) => {
+      state.error = null;
+    },
   },
 });
 
-export const { registerUser, signUserIn, logUserOut } =
+export const { registerUser, signUserIn, logUserOut, resetErrors } =
   authenticationSlice.actions;
 export default authenticationSlice;

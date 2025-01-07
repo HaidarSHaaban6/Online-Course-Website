@@ -1,4 +1,4 @@
-interface Course {   
+interface Course {
   id: number;
   course_title: string;
   description: string;
@@ -17,7 +17,7 @@ enum level {
   Advanced = "Advanced",
 }
 
-interface CourseDetails {
+export interface CourseDetails {
   id: number;
   unit: string;
   topic: string;

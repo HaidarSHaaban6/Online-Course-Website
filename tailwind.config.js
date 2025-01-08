@@ -7,14 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+      },
+      
       borderWidth: {
         1: "1px",
-      },
-      width: {
-        "10.5/12": "88.81%",
-        "9.5/12": "79.23%",
-        "3.5/12": "25.5%",
-        "1.5/6": "31.9%",
       },
       colors: {
         // Absolute Colors :
@@ -93,6 +97,7 @@ module.exports = {
             paddingRight: "0",
             maxWidth: "1597px",
           },
+          
         },
       });
     },

@@ -1,21 +1,17 @@
 import AccordionItem from "../ui/AccordionItem";
+import { FAQ } from "../data/homepageFillData";
 
-
-interface FAQ{
-    title:string;
-    subtitle:string;
-    btn:string;
-}
 
 const FAQsSection = ({title,subtitle,btn}:FAQ) => {
   return (
    <div className="
-        flex justify-center items-center font-vietnam mt-[50px] lg:mt-[100px] ">
+      custom-container  flex justify-center items-center font-vietnam mt-[50px] lg:mt-[100px] ">
     <div className="
+     
          bg-white rounded-xl flex 
-        custom-2xl:flex-row  custom-2xl:justify-between custom-2xl:w-10/12  custom-2xl:p-[100px] custom-2xl:gap-[120px] 
-        lg:flex-row lg:justify-between lg:w-10.5/12  lg:p-20 lg:gap-20
-        flex-col justify-center w-11/12  p-[24px] gap-10
+        custom-2xl:flex-row  custom-2xl:justify-between  custom-2xl:p-[100px] custom-2xl:gap-[120px] 
+        lg:flex-row lg:justify-between   lg:p-20 lg:gap-20
+        flex-col justify-center  p-[24px] gap-10
         ">
             
             <div className=" custom-container

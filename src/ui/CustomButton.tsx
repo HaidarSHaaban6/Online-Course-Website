@@ -16,7 +16,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         custom
           ? "bg-orange/50 text-white font-semibold"
           : "text-grey/15 font-medium bg-white/99 border border-white/95"
-      } w-fit rounded-md custom-2xl:px-[26px] custom-2xl:py-[18px] px-5 py-[14px] custom-2xl:text-lg text-sm`}
+      } w-fit rounded-md custom-2xl:px-6 custom-2xl:py-[18px] px-5 py-[14px] custom-2xl:text-lg text-sm`}
     >
       {btnText}
     </button>

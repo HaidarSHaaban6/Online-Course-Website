@@ -41,7 +41,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
               className={`items-center gap-y-[26px] fixed top-0 left-0 w-full h-screen bg-white/97 z-50 flex justify-center flex-col duration-300 ${
                 navShow ? "translate-x-0" : "translate-x-full"
               }
-            lg:flex-row lg:gap-x-[26px] lg:relative lg:h-fit lg:flex lg:justify-start lg:translate-x-0`}
+            lg:flex-row lg:relative lg:h-fit lg:flex lg:justify-start lg:translate-x-0`}
             >
               <IoCloseOutline
                 className="
@@ -54,13 +54,13 @@ const NavBar = ({ logo, links }: NavBarProps) => {
                 <NavLink
                   to={element.link}
                   key={index}
-                  className={({ isActive }) => `text-sm text-grey/15 duration-300 
+                  className={({ isActive }) => `text-sm text-grey/15 duration-300 py-3 px-5
                   ${
                     element.link == "/dashboard" && " text-orange/50 "
                   }
                     ${
                       isActive
-                        ? " rounded-md py-3 px-5 bg-white/95"
+                        ? " rounded-md bg-white/95"
                         : ""
                     }`}
                   onClick={() => setNavShow(!navShow)}

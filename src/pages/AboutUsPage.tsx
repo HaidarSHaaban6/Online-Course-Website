@@ -1,11 +1,12 @@
+
 const AboutUsPage = () => {
-  return
-   <div>
+  return (
+    <div>
     <h1>AboutUsPage</h1>
     <div> blablabla This Is Test 
     </div>
+    </div>
+  )
+}
 
-  </div>;
-};
-
-export default AboutUsPage;
+export default AboutUsPage

@@ -25,7 +25,7 @@ const BenefitsCard: React.FC<BenefitsCardProps> = ({
         {description}
       </p>
       <p className="flex items-center justify-center hover:cursor-pointer h-[54px] w-[54px] rounded-md bg-white/99 border border-white/95 ml-auto custom-2xl:w-[74px] custom-2xl:h-[74px] custom-2xl:rounded-lg">
-        <MdArrowOutward className="text-orange/50 w-[13px] h-[13px] custom-2xl:w-[17px] custom-2xl:h-[17px]" />
+        <MdArrowOutward className="text-orange/50 text-[26px] custom-2xl:text-[34px]" />
       </p>
     </div>
   );

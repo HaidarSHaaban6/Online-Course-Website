@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import authSlice from "./../Slice/authenticationSlice";
-import coursesReducer from "./../Slice/coursesSlice";
-import benefitsReducer from "./../Slice/benefitsSlice";
-import marqueeReducer from "./../Slice/marqueeSlice";
-import contactSlice from "../Slice/contactFormSlice";
+import authSlice from "../slice/authenticationSlice";
+import coursesReducer from "../slice/coursesSlice";
+import benefitsReducer from "../slice/benefitsSlice";
+import marqueeReducer from "../slice/marqueeSlice";
+import pricingReducer from "../slice/pricingSlice";
+import contactSlice from "../slice/contactFormSlice";
 
 const store = configureStore({
   reducer: {
@@ -11,7 +12,8 @@ const store = configureStore({
     courses: coursesReducer,
     benefit: benefitsReducer,
     marquee: marqueeReducer,
-    contact: contactSlice.reducer,
+    pricing: pricingReducer,
+    contact: contactSlice.reducer
   },
 });
 

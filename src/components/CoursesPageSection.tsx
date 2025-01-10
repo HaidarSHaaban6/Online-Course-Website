@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import PageTitle from "../ui/PageTitle";
-import { getMainCourse } from "./../redux/Slice/coursesSlice";
+import { getMainCourse } from "../redux/slice/coursesSlice";
 import { RootState } from "../redux/store";
 import SectionTitle from "../ui/SectionTitle";
 import CustomButton from "../ui/CustomButton";

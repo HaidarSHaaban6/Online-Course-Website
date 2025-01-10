@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import benefits from "./../../data/Benifits";
+import benefits from "../../data/Benifits";
 
 // Define The Structure For Benefit Information
 export interface BenefitType {

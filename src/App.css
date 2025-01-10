@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Black.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Black.ttf")
+    format("truetype");
 
   font-weight: 900;
 
@@ -11,7 +12,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BlackItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BlackItalic.ttf")
+    format("truetype");
 
   font-weight: 900;
 
@@ -21,7 +23,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf")
+    format("truetype");
 
   font-weight: 700;
 
@@ -31,7 +34,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf")
+    format("truetype");
 
   font-weight: 700;
 
@@ -41,7 +45,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf")
+    format("truetype");
 
   font-weight: 800;
 
@@ -51,7 +56,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBoldItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBoldItalic.ttf")
+    format("truetype");
 
   font-weight: 800;
 
@@ -61,7 +67,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLight.ttf")
+    format("truetype");
 
   font-weight: 200;
 
@@ -71,7 +78,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLightItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraLightItalic.ttf")
+    format("truetype");
 
   font-weight: 200;
 
@@ -81,7 +89,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Italic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Italic.ttf")
+    format("truetype");
 
   font-weight: 400;
 
@@ -91,7 +100,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf")
+    format("truetype");
 
   font-weight: 300;
 
@@ -101,7 +111,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-LightItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-LightItalic.ttf")
+    format("truetype");
 
   font-weight: 300;
 
@@ -111,7 +122,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf")
+    format("truetype");
 
   font-weight: 500;
 
@@ -121,7 +133,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-MediumItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-MediumItalic.ttf")
+    format("truetype");
 
   font-weight: 500;
 
@@ -131,7 +144,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf")
+    format("truetype");
 
   font-weight: 400;
 
@@ -141,7 +155,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf")
+    format("truetype");
 
   font-weight: 600;
 
@@ -151,7 +166,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBoldItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBoldItalic.ttf")
+    format("truetype");
 
   font-weight: 600;
 
@@ -161,7 +177,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Thin.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-Thin.ttf")
+    format("truetype");
 
   font-weight: 100;
 
@@ -171,7 +188,8 @@
 @font-face {
   font-family: "Be Vietnam Pro";
 
-  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ThinItalic.ttf") format("truetype");
+  src: url("/public/fonts/Be_Vietnam_Pro/BeVietnamPro-ThinItalic.ttf")
+    format("truetype");
 
   font-weight: 100;
 
@@ -984,6 +1002,10 @@ video {
   margin-bottom: 14px;
 }
 
+.mb-\[2px\] {
+  margin-bottom: 2px;
+}
+
 .mb-\[30px\] {
   margin-bottom: 30px;
 }
@@ -1081,10 +1103,6 @@ video {
   height: 1.5rem;
 }
 
-.h-\[13px\] {
-  height: 13px;
-}
-
 .h-\[49px\] {
   height: 49px;
 }
@@ -1135,10 +1153,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[13px\] {
-  width: 13px;
 }
 
 .w-\[31\.2\%\] {
@@ -1195,16 +1209,14 @@ video {
 }
 
 @keyframes bounce {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50% {
     transform: none;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
@@ -1228,20 +1240,6 @@ video {
 
 .resize {
   resize: both;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 15s linear infinite;
 }
 
 .grid-cols-1 {
@@ -1322,7 +1320,7 @@ video {
 
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
-  column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .gap-x-\[50px\] {
@@ -1415,6 +1413,11 @@ video {
   border-color: #FFFFFF4D;
 }
 
+.border-orange\/80 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 213 153 / var(--tw-border-opacity, 1));
+}
+
 .border-white\/90 {
   --tw-border-opacity: 1;
   border-color: rgb(228 228 231 / var(--tw-border-opacity, 1));
@@ -1442,6 +1445,11 @@ video {
 .bg-orange\/50 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 149 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange\/90 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 234 204 / var(--tw-bg-opacity, 1));
 }
 
 .bg-orange\/95 {
@@ -1489,10 +1497,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .p-1 {
@@ -1680,6 +1684,14 @@ video {
   line-height: 1;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .text-\[28px\] {
   font-size: 28px;
 }
@@ -1817,6 +1829,12 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.shadow-custom {
+  --tw-shadow: 0px 0px 0px 4px #FFF4E5;
+  --tw-shadow-colored: 0px 0px 0px 4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-0 {
@@ -1979,12 +1997,20 @@ video {
     margin-bottom: 3.5rem;
   }
 
-  .lg\:mt-\[100px\] {
-    margin-top: 100px;
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-\[100px\] {
+    margin-top: 100px;
   }
 
   .lg\:flex {
@@ -2027,6 +2053,10 @@ video {
   .lg\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
@@ -2083,6 +2113,10 @@ video {
          column-gap: 26px;
   }
 
+  .lg\:rounded-\[10px\] {
+    border-radius: 10px;
+  }
+
   .lg\:rounded-md {
     border-radius: 0.375rem;
   }
@@ -2093,38 +2127,6 @@ video {
 
   .lg\:border-e {
     border-inline-end-width: 1px;
-  }
-
-  .lg\:border-r {
-    border-right-width: 1px;
-  }
-
-  .lg\:p-\[60px\] {
-    padding: 60px;
-  }
-
-  .lg\:p-10 {
-    padding: 2.5rem;
-  }
-
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
-  }
-
-  .lg\:border-e {
-    border-inline-end-width: 1px;
-  }
-
-  .lg\:p-\[60px\] {
-    padding: 60px;
-  }
-
-  .lg\:rounded-md {
-    border-radius: 0.375rem;
-  }
-
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
   }
 
   .lg\:border-r {
@@ -2137,6 +2139,10 @@ video {
 
   .lg\:p-20 {
     padding: 5rem;
+  }
+
+  .lg\:p-\[60px\] {
+    padding: 60px;
   }
 
   .lg\:px-10 {
@@ -2172,6 +2178,11 @@ video {
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:py-6 {
@@ -2223,6 +2234,11 @@ video {
     line-height: 2.5rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:text-\[28px\] {
     font-size: 28px;
   }
@@ -2238,6 +2254,11 @@ video {
 
   .lg\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
@@ -2325,38 +2346,6 @@ video {
 
   .custom-xl\:mb-10 {
     margin-bottom: 2.5rem;
-  }
-
-  .custom-xl\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .custom-xl\:mb-\[100px\] {
-    margin-bottom: 100px;
-  }
-
-  .custom-xl\:mb-\[60px\] {
-    margin-bottom: 60px;
-  }
-
-  .custom-xl\:mt-\[100px\] {
-    margin-top: 100px;
-  }
-
-  .custom-xl\:h-\[1020px\] {
-    height: 1020px;
-  }
-
-  .custom-xl\:w-10 {
-    width: 2.5rem;
-  }
-
-  .custom-xl\:w-10\.5\/12 {
-    width: 88.81%;
-  }
-
-  .custom-xl\:flex-row {
-    flex-direction: row;
   }
 
   .custom-xl\:mb-4 {
@@ -2499,6 +2488,10 @@ video {
     margin-bottom: 150px;
   }
 
+  .custom-2xl\:mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+
   .custom-2xl\:mb-\[30px\] {
     margin-bottom: 30px;
   }
@@ -2527,6 +2520,10 @@ video {
     margin-top: 2rem;
   }
 
+  .custom-2xl\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
   .custom-2xl\:mt-\[109px\] {
     margin-top: 109px;
   }
@@ -2535,12 +2532,9 @@ video {
     margin-top: 150px;
   }
 
-  .custom-2xl\:h-\[1202px\] {
-    height: 1202px;
-  }
-
-  .custom-2xl\:h-\[17px\] {
-    height: 17px;
+  .custom-2xl\:size-\[34px\] {
+    width: 34px;
+    height: 34px;
   }
 
   .custom-2xl\:h-\[63px\] {
@@ -2553,10 +2547,6 @@ video {
 
   .custom-2xl\:h-\[74px\] {
     height: 74px;
-  }
-
-  .custom-2xl\:w-\[17px\] {
-    width: 17px;
   }
 
   .custom-2xl\:w-\[52px\] {
@@ -2609,7 +2599,7 @@ video {
 
   .custom-2xl\:gap-x-3\.5 {
     -moz-column-gap: 0.875rem;
-    column-gap: 0.875rem;
+         column-gap: 0.875rem;
   }
 
   .custom-2xl\:gap-x-4 {
@@ -2665,6 +2655,11 @@ video {
     padding-right: 132px;
   }
 
+  .custom-2xl\:px-\[14px\] {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .custom-2xl\:px-\[30px\] {
     padding-left: 30px;
     padding-right: 30px;
@@ -2683,6 +2678,11 @@ video {
   .custom-2xl\:px-\[50px\] {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .custom-2xl\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .custom-2xl\:py-3\.5 {
@@ -2779,6 +2779,10 @@ video {
 
   .custom-2xl\:text-\[22px\] {
     font-size: 22px;
+  }
+
+  .custom-2xl\:text-\[34px\] {
+    font-size: 34px;
   }
 
   .custom-2xl\:text-\[38px\] {

@@ -8,7 +8,7 @@ import {
   getMainBenefitData,
   getAllBenefitData,
   BenefitType,
-} from "./../redux/slice/benefitsSlice";
+} from "../redux/slice/benefitsSlice";
 import BenefitsCard from "../ui/BenefitsCard";
 
 const BenefitsSection = () => {

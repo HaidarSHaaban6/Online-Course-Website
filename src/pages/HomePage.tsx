@@ -8,6 +8,7 @@ import Video from "../ui/Video";
 import VideoIconTag from "../ui/VideoIconTag";
 import videoFrame from '../assets/img/home_page_frame.png'
 import iconImg from '../assets/img/Abstract_Line.png'
+import PricingSection from "../components/PricingSection";
 
 const HomePage = () => {
  
@@ -24,6 +25,7 @@ const HomePage = () => {
 
       <BenefitsSection />
       <OurCoursesSection />
+      <PricingSection/>
       <FAQsSection title={FAQ.title} subtitle={FAQ.subtitle} btn={FAQ.btn} />
     </div>
   );

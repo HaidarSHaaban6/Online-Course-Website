@@ -45,7 +45,6 @@ const Hero = ({ iconImg, word1, line1, line2, line3, btn1, btn2 }: HeroData) => 
 
           <CustomButton
             btnText={btn2}
-            custom={false}
             functionality={() => moveToPricing()} />
 
         </div>

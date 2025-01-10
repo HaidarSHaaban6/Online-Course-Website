@@ -16,7 +16,7 @@ module.exports = {
       animation: {
         marquee: "marquee 15s linear infinite",
       },
-      
+
       borderWidth: {
         1: "1px",
       },
@@ -60,6 +60,9 @@ module.exports = {
       fontFamily: {
         vietnam: ['"Be Vietnam Pro"', "sans-serif"],
       },
+      boxShadow: {
+        custom: "0px 0px 0px 4px #FFF4E5",
+      },
     },
   },
   plugins: [
@@ -97,7 +100,6 @@ module.exports = {
             paddingRight: "0",
             maxWidth: "1597px",
           },
-          
         },
       });
     },

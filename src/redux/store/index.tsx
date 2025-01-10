@@ -11,7 +11,7 @@ const store = configureStore({
     courses: coursesReducer,
     benefit: benefitsReducer,
     marquee: marqueeReducer,
-    contact: contactSlice.reducer
+    contact: contactSlice.reducer,
   },
 });
 

@@ -1,12 +1,13 @@
 // Import Section :
 import { useDispatch, useSelector } from "react-redux"; // Import reacts-redux
 import { useEffect } from "react"; // Import useEffect
-import { getOpenCourse } from "../redux/slice/coursesSlice";
+import { getOpenCourse } from "../redux/Slice/coursesSlice";
 import { RootState } from "../redux/store"; // Import RootState
 import { useParams } from "react-router-dom"; // Import useParams
 import Video from "../ui/Video"; // Import Video Component
 import VideoIconTag from "../ui/VideoIconTag"; // Import VideoIconTag
 import PageTitle from "../ui/PageTitle"; // Import PageTitle
+import MainCoursesCard from "../ui/MainCoursesCard";
 
 const CoursesOpenPageSection = () => {
   const dispatch = useDispatch(); // Initialize dispatch
@@ -36,6 +37,15 @@ const CoursesOpenPageSection = () => {
         <Video img={openCourse.image1}>
           <VideoIconTag />
         </Video>
+        <div className="grid gap-5 lg:grid-cols-2 custom-2xl:gap-[30px] mt-[50px] lg:mt-20 custom-2xl:mt-[100px]">
+          {openCourse.curriclum.map((item) => (
+            <MainCoursesCard
+              topic={item.topic}
+              info={item.info}
+              unit={item.unit}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

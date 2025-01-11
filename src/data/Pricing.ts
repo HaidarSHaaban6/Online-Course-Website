@@ -1,13 +1,13 @@
 interface Features {
-  name: String;
-  avalibility: Boolean;
+  name: string;
+  avalibility: boolean;
 }
 
 interface Pricing {
-  id: Number;
-  title: String;
-  mounthly_plan_fee: Number;
-  yearly_plan_fee: Number;
+  id: number;
+  title: string;
+  mounthly_plan_fee: number;
+  yearly_plan_fee: number;
   Features: Features[];
 }
 

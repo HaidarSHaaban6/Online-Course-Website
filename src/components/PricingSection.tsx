@@ -1,48 +1,89 @@
-import ButtonContainer from "../ui/ButtonContainer"
-import PricingCard from "../ui/PricingCard"
-import SectionTitle from "../ui/SectionTitle"
-import { pricingHead} from "../data/Pricing"
-import { useState } from "react"
-import { useSelector } from "react-redux"
+import ButtonContainer from "../ui/ButtonContainer";
+import PricingCard from "../ui/PricingCard";
+import SectionTitle from "../ui/SectionTitle";
+import { Pricing, pricingHead } from "../data/Pricing";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
-
+import { getMonthlyPlans, getYearlyPlans } from "../redux/Slice/pricingSlice";
 
 const PricingSection = () => {
-  const [plan,setplan]=useState(true)
-    const MonthlyPlan = ()=>{
-       setplan(true)
-    }
-    const YearlyPlan = ()=>{
-      setplan(false)
-    }
+  const fetchMonthlyData = () => {
+    dispatch(getMonthlyPlans());
+    setDataToShow(monthPlan);
+  };
 
-    const plans = useSelector((state: RootState) => state.pricing.plans);
+  const fetchYearlyData = () => {
+    dispatch(getYearlyPlans());
+    setDataToShow(yearPlan);
+  };
+
+  const dispatch = useDispatch();
+
+  const monthPlan = useSelector(
+    (state: RootState) => state.pricing.monthlyPlansData
+  );
+
+  const yearPlan = useSelector(
+    (state: RootState) => state.pricing.yearlyPlansData
+  );
+
+  const [dataToShow, setDataToShow] = useState<Pricing[]>(monthPlan);
+
+  useEffect(() => {
+    dispatch(getMonthlyPlans());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (monthPlan.length > 0) {
+      setDataToShow(monthPlan);
+    }
+  }, [monthPlan]);
+
+  useEffect(() => {
+    if (yearPlan.length > 0) {
+      setDataToShow(yearPlan);
+    }
+  }, [yearPlan]);
 
   return (
-
     <div className="mt-[100px]">
-        <div className="flex justify-center items-center">
-            <div className="custom-container">
-
-            <SectionTitle title={pricingHead.title} description={pricingHead.subtitle}>
-                <ButtonContainer primaryButtonText="Monthly" secondaryButtonText="Yearly" onPrimaryButtonClick={MonthlyPlan} onSecondaryButtonClick={YearlyPlan} />
-            </SectionTitle> 
-
-            </div>
+      <div className="flex items-center justify-center">
+        <div className="custom-container">
+          <SectionTitle
+            title={pricingHead.title}
+            description={pricingHead.subtitle}
+          >
+            <ButtonContainer
+              primaryButtonText="Monthly"
+              secondaryButtonText="Yearly"
+              onPrimaryButtonClick={fetchMonthlyData}
+              onSecondaryButtonClick={fetchYearlyData}
+            />
+          </SectionTitle>
         </div>
-        
-        <div className="flex justify-center items-center">
-            <div className="custom-container bg-white flex justify-center items-center gap-4 p-20
-            ">
-              {plans.map((e,i)=>{return(
-                <PricingCard key={i} title={e.title} plan_fee={plan === true? e.monthly_plan_fee:e.yearly_plan_fee}
-                 usedPlan={plan === true? e.monthPlan:e.yearPlan} available="Available Features"/>
-              )})}
+      </div>
 
-            </div>
+      <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-4 p-20 bg-white custom-container ">
+          {dataToShow.map((item, index) => {
+            return (
+              <PricingCard
+                key={index}
+                title={item.title}
+                plan_fee={
+                  item.isMonth ? item.monthly_plan_fee : item.yearly_plan_fee
+                }
+                usedPlan={item.isMonth ? item.monthPlan : item.yearPlan}
+                available="Available Features"
+                features={item.features}
+              />
+            );
+          })}
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PricingSection
+export default PricingSection;

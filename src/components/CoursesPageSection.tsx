@@ -2,12 +2,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import PageTitle from "../ui/PageTitle";
-import { getMainCourse } from "../redux/slice/coursesSlice";
+import { getMainCourse } from "../redux/Slice/coursesSlice";
 import { RootState } from "../redux/store";
 import SectionTitle from "../ui/SectionTitle";
 import CustomButton from "../ui/CustomButton";
 import { useNavigate } from "react-router-dom";
-import { CourseDetails } from "../data/Courses";
 
 // CoursePageSection Component
 const CoursePageSection = () => {
@@ -89,7 +88,7 @@ const CoursePageSection = () => {
                 Curriculum
               </p>
               <div className="flex flex-col p-6 border-t lg:flex-row border-white/95 lg:px-10 lg:py-6 custom-2xl:px-[50px] custom-2xl:py-[30px]">
-                {course.curriclum.map((item: CourseDetails, index: number) => (
+                {course.curriclum.map((item, index) => (
                   <div
                     key={index}
                     className={`lg:w-full border-white/95 ${

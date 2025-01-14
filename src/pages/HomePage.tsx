@@ -1,7 +1,7 @@
 import BenefitsSection from "../components/BenefitsSection";
 import Hero from "../components/Hero";
 import OurCoursesSection from "../components/OurCoursesSection";
-import FAQsSection from "../ui/FAQsSection";
+import FAQsSection from "../components/FAQsSection";
 import { FAQ,HeroData } from "../data/homepageFillData";
 import MarqueSlider from "../ui/MarqueSlider";
 import Video from "../ui/Video";

@@ -1,34 +1,35 @@
-// src/redux/slice/pricingSlice.ts
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { pricing, Pricing } from "../../data/Pricing"; 
+import { createSlice } from "@reduxjs/toolkit";
+import pricing, { Pricing } from "../../data/Pricing";
 
 interface PricingState {
   plans: Pricing[];
-  Features:featureType[];
-}
-
-interface featureType{
-  name:string;
-  avalibility:boolean;
+  monthlyPlansData: Pricing[];
+  yearlyPlansData: Pricing[];
 }
 
 const initialState: PricingState = {
   plans: pricing,
-  Features:[], // Initialize with the pricing array
+  monthlyPlansData: [],
+  yearlyPlansData: [],
 };
 
 const pricingSlice = createSlice({
   name: "pricing",
   initialState,
   reducers: {
-    // Add any additional actions if needed
-    setPlans: (state, action: PayloadAction<Pricing[]>) => {
-      // state.plans = action.payload;
-      // state.Features=state.plans.map((item)=>({Features:item.Features}))
+    getMonthlyPlans: (state) => {
+      state.monthlyPlansData = state.plans.filter(
+        (item: Pricing) => item.isMonth
+      );
+    },
+    getYearlyPlans: (state) => {
+      state.yearlyPlansData = state.plans.filter(
+        (item: Pricing) => item.isYear
+      );
     },
   },
 });
 
-export const { setPlans } = pricingSlice.actions;
+export const { getMonthlyPlans, getYearlyPlans } = pricingSlice.actions;
 
 export default pricingSlice.reducer;

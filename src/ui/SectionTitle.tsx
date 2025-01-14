@@ -1,7 +1,7 @@
 interface SectionTitleProps {
   title: string;
   description: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   custom?: boolean;
 }
 

@@ -49,40 +49,50 @@ const PricingSection = () => {
   return (
     <div className="mt-[100px]">
       <div className="flex items-center justify-center">
-        <div className="custom-container">
-          <SectionTitle
-            title={pricingHead.title}
-            description={pricingHead.subtitle}
-          >
+        <div className="custom-container flex-row items-center">
+          <div>
+            <SectionTitle
+              title={pricingHead.title}
+              description={pricingHead.subtitle}
+              children />
+          </div>
+          <div className="flex lg:justify-end justify-center custom-2xl:mt-[-150px] xl:mt-[-100px] lg:mt-[-90px] ">
             <ButtonContainer
               primaryButtonText="Monthly"
               secondaryButtonText="Yearly"
               onPrimaryButtonClick={fetchMonthlyData}
               onSecondaryButtonClick={fetchYearlyData}
             />
-          </SectionTitle>
+          </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
-        <div className="flex items-center justify-center gap-4 p-20 bg-white custom-container ">
-          {dataToShow.map((item, index) => {
-            return (
-              <PricingCard
-                key={index}
-                title={item.title}
-                plan_fee={
-                  item.isMonth ? item.monthly_plan_fee : item.yearly_plan_fee
-                }
-                usedPlan={item.isMonth ? item.monthPlan : item.yearPlan}
-                available="Available Features"
-                features={item.features}
-              />
-            );
-          })}
+      <div className=" mt-[50px]">
+
+        <div className="custom-container  ">
+
+          <div className="lg:p-20 p-5 bg-white  grid grid-cols-1 lg:grid-cols-2 gap-[30px] rounded-xl ">
+            {dataToShow.map((item, index) => {
+              return (
+                <PricingCard
+                  key={index}
+                  title={item.title}
+                  plan_fee={
+                    item.isMonth ? item.monthly_plan_fee : item.yearly_plan_fee
+                  }
+                  usedPlan={item.isMonth ? item.monthPlan : item.yearPlan}
+
+                  available="Available Features"
+                  features={item.features}
+                />
+              );
+            })}
+          </div>
         </div>
+
       </div>
     </div>
+
   );
 };
 

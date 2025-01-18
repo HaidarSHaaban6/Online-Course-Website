@@ -1,8 +1,6 @@
-
 import { IoMdCheckmark } from "react-icons/io";
 import { Features } from "../data/Pricing";
 import { IoClose } from "react-icons/io5";
-
 
 interface PricingCardProp {
   title: string;
@@ -35,7 +33,7 @@ const PricingCard: React.FC<PricingCardProp> = ({
         </span>
         {usedPlan}
       </div>
-      <div className="border-1 border-white/95 bg-white rounded-2xl custom-2xl:p-10 custom-2xl:gap-[30px] lg:p-[30px] lg:gap-6  p-5 gap-5 ">
+      <div className="border-1 border-white/95 bg-white rounded-t-[10px] lg:rounded-t-[14px] custom-2xl:p-10 custom-2xl:gap-[30px] lg:p-[30px] lg:gap-6  p-5 gap-5 ">
         <div className="flex justify-center items-center text-grey/15 font-medium custom-2xl:text-xl custom-2xl:leading-[30px] text-lg pb-2">
           {available}
         </div>
@@ -43,17 +41,20 @@ const PricingCard: React.FC<PricingCardProp> = ({
           {features.map((item: Features) => (
             <li className="flex justify-start items-center  border-1 border-white/95 custom-2xl:px-[14px] custom-2xl:py-1 custom-2xl:rounded-lg  px-3 py-0 rounded-md  custom-2xl:my-3 my-2">
               <div
-                className={`p-[6px] m-2 text-grey/15 rounded-md border-1 border-white/95 text-center ${item.availability ? " bg-orange/95" : " bg-transparent"
-                  }`}
+                className={`p-[6px] m-2 text-grey/15 rounded-md border-1 border-white/95 text-center ${
+                  item.availability ? " bg-orange/95" : " bg-transparent"
+                }`}
               >
                 {item.availability ? <IoMdCheckmark /> : <IoClose />}
               </div>
-              <span className="text-grey/30 font-normal custom-2xl:text-lg text-sm ">{item.name}</span>
+              <span className="text-sm font-normal text-grey/30 custom-2xl:text-lg ">
+                {item.name}
+              </span>
             </li>
           ))}
         </ul>
       </div>
-      <button className="w-full rounded-lg custom-2xl:text-lg bg-orange/50 font-semibold text-white px-6 custom-2xl:py-[20px] py-[18px] text-sm ">
+      <button className="w-full rounded-lg custom-2xl:text-lg bg-orange/50 font-semibold text-white px-6 custom-2xl:py-[20px] py-[18px] text-sm transition-colors hover:bg-orange/70">
         Get Started
       </button>
     </div>

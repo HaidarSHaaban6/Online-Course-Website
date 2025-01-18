@@ -40,9 +40,9 @@ const LoginPage = () => {
         })
       );
       setLogInError("");
-      console.log(currentUser);
     } catch (error: any) {
       setLogInError(error.message);
+      dispatch(resetErrors());
     }
   };
 

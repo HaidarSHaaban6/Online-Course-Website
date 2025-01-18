@@ -877,8 +877,16 @@ video {
   position: sticky;
 }
 
+.-bottom-8 {
+  bottom: -2rem;
+}
+
 .-left-4 {
   left: -1rem;
+}
+
+.-right-20 {
+  right: -5rem;
 }
 
 .-top-6 {
@@ -2179,6 +2187,10 @@ video {
     margin-bottom: 80px;
   }
 
+  .lg\:-mt-\[180px\] {
+    margin-top: -180px;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2698,6 +2710,10 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .custom-2xl\:-mt-\[200px\] {
+    margin-top: -200px;
+  }
+  
   .custom-2xl\:my-3 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;

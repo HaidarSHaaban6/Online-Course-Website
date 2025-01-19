@@ -39,9 +39,9 @@ interface BaseCourse {
   id: number;
   course_title: string;
   description: string;
-  course_duration?: string;
-  level?: string;
-  author?: string;
+  course_duration: string;
+  level: string;
+  author: string;
 }
 
 // Extended Interface For Courses With Multiple Images

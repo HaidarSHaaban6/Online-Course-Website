@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import LabeledInput from "../ui/LabeledInput";
-import { addContactInfo, contactInfo } from "../redux/slice/contactFormSlice";
+import { addContactInfo, contactInfo } from "../redux/Slice/contactFormSlice";
 import ContactService from "../Services/ContactService";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
@@ -75,14 +75,14 @@ const ContactSection = () => {
         show={success}
       />
       <div className="custom-container">
-        <div className="bg-white rounded-xl flex flex-wrap">
+        <div className="flex flex-wrap bg-white rounded-xl">
           <div
             className="
                     w-full p-[30px] border-b border-white/95 relative overflow-hidden
                     lg:w-[70%] lg:p-[60px] lg:border-e lg:border-b-0 "
           >
             {showThankYou && <ThankYouPop />}
-            <div className="flex gap-x-6 mb-6 flex-col md:flex-row gap-y-6 md:gap-y-0">
+            <div className="flex flex-col mb-6 gap-x-6 md:flex-row gap-y-6 md:gap-y-0">
               <div className="grow">
                 <LabeledInput<contactInfo>
                   label="First Name"
@@ -106,7 +106,7 @@ const ContactSection = () => {
                 />
               </div>
             </div>
-            <div className="flex gap-x-6 mb-6 flex-col md:flex-row gap-y-6 md:gap-y-">
+            <div className="flex flex-col mb-6 gap-x-6 md:flex-row gap-y-6 md:gap-y-">
               <div className="grow">
                 <LabeledInput<contactInfo>
                   label="Email"

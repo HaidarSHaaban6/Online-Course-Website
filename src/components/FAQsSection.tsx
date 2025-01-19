@@ -1,5 +1,5 @@
-import AccordionItem from "../ui/AccordionItem";
 import { FAQ } from "../data/homepageFillData";
+import AccordionItem from "../ui/accordionItem";
 
 
 const FAQsSection = ({title,subtitle,btn}:FAQ ) => {

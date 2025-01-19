@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Footer from "../../ui/Footer";
+import Footer from "../../components/footer/Footer";
 import NavBar, { LinkData } from "../../ui/NavBar";
 import Banner from "../../components/Banner";
 import logo from "./../../assets/img/Logo.png";

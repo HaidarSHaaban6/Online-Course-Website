@@ -2,9 +2,9 @@ import AccordionItem from "../ui/AccordionItem";
 import { FAQ } from "../data/homepageFillData";
 
 
-const FAQsSection = ({title,subtitle,btn}:FAQ) => {
+const FAQsSection = ({title,subtitle,btn}:FAQ ) => {
   return (
-   <div className="
+   <div id="faq" className="
       custom-container  flex justify-center items-center font-vietnam mt-[50px] lg:mt-[100px] ">
     <div className="
      

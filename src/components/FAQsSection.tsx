@@ -42,7 +42,7 @@ const FAQsSection = ({title,subtitle,btn}:FAQ ) => {
              custom-2xl:gap-[30px]
              lg:gap-[30px]
              gap-5
-            ">
+            " data-aos='fade-out'>
                 <AccordionItem/>
             </div>
 

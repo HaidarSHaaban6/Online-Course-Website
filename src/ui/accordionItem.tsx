@@ -2,7 +2,6 @@ import { accordionData } from "../data/accordion.ts"
 import { FaPlus, FaArrowRight } from "react-icons/fa6";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import useAOS from "../hooks/useAOS.ts";
 
 
 const AccordionItem = () => {
@@ -11,7 +10,7 @@ const AccordionItem = () => {
   const toggle = (i: number) => {
     setActiveItem(activeItem === i ? null : i);
   };
- useAOS();
+ 
   return (
     <div >
       {accordionData.map((e, i) => (
@@ -21,7 +20,7 @@ const AccordionItem = () => {
           gap-5 
           ${activeItem === i ?   ' custom-2xl:p-[50px] lg:p-10  p-6 ':'' }
              
-        `} data-aos="fade-up">
+        `}>
           <div className={`flex justify-between items-center  border-white/95 
               ${activeItem === i ?'border-b-1 pb-6 ':'custom-2xl:py-[30px] lg:py-[30px] py-5 custom-2xl:px-[50px] lg:px-10 px-6'}  
           `}>

@@ -41,9 +41,9 @@ export const courses: Course[] = [
     course_duration: "4 Weeks",
     level: level.Beginner,
     author: "By John Smith",
-    image1: "src/assets/img/Courses/image2.png",
-    image2: "src/assets/img/Courses/image1.png",
-    image3: "src/assets/img/Courses/image.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image2.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image1.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image.png",
     curriclum: [
       {
         id: 1,
@@ -195,9 +195,9 @@ export const courses: Course[] = [
     course_duration: "6 Weeks",
     level: level.Intermediate,
     author: "By Emily Johnson",
-    image1: "src/assets/img/Courses/image3.png",
-    image2: "src/assets/img/Courses/image4.png",
-    image3: "src/assets/img/Courses/image5.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image3.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image4.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image5.png",
     curriclum: [
       {
         id: 1,
@@ -349,9 +349,9 @@ export const courses: Course[] = [
     course_duration: "8 Weeks",
     level: level.Intermediate,
     author: "By David Brown",
-    image1: "src/assets/img/Courses/image6.png",
-    image2: "src/assets/img/Courses/image7.png",
-    image3: "src/assets/img/Courses/image8.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image6.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image7.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image8.png",
     curriclum: [
       {
         id: 1,
@@ -504,9 +504,9 @@ export const courses: Course[] = [
     course_duration: "10 Weeks",
     level: level.Beginner,
     author: "By Sarah Thompson",
-    image1: "src/assets/img/Courses/image11.png",
-    image2: "src/assets/img/Courses/image10.png",
-    image3: "src/assets/img/Courses/image9.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image11.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image10.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image9.png",
     curriclum: [
       {
         id: 1,
@@ -658,9 +658,9 @@ export const courses: Course[] = [
     course_duration: "10 Weeks",
     level: level.Intermediate,
     author: "By Michael Adams",
-    image1: "src/assets/img/Courses/image12.png",
-    image2: "src/assets/img/Courses/image13.png",
-    image3: "src/assets/img/Courses/image14.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image12.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image13.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image14.png",
     curriclum: [
       {
         id: 1,
@@ -812,9 +812,9 @@ export const courses: Course[] = [
     course_duration: "6 Weeks",
     level: level.Advanced,
     author: "By Jennifer Wilson",
-    image1: "src/assets/img/Courses/image15.png",
-    image2: "src/assets/img/Courses/image16.png",
-    image3: "src/assets/img/Courses/image.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image15.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image16.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image.png",
     curriclum: [
       {
         id: 1,
@@ -966,9 +966,9 @@ export const courses: Course[] = [
     course_duration: "12 Weeks",
     level: level.Advanced,
     author: "By Axl Rose",
-    image1: "src/assets/img/Courses/image5.png",
-    image2: "src/assets/img/Courses/image7.png",
-    image3: "src/assets/img/Courses/image10.png",
+    image1: "/Online-Course-Website/src/assets/img/Courses/image5.png",
+    image2: "/Online-Course-Website/src/assets/img/Courses/image7.png",
+    image3: "/Online-Course-Website/src/assets/img/Courses/image10.png",
     curriclum: [
       {
         id: 1,

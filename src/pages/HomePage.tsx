@@ -7,7 +7,7 @@ import MarqueSlider from "../ui/MarqueSlider";
 import Video from "../ui/Video";
 import VideoIconTag from "../ui/VideoIconTag";
 import videoFrame from "../assets/img/home_page_frame.png";
-import iconImg from "../assets/img/Abstract_Line.png";
+import iconImg from "/src/assets/img/Abstract_Line.png";
 import PricingSection from "../components/PricingSection";
 import TetimonialsSection from "../components/TetimonialsSection";
 import useAOS from '../hooks/useAOS';

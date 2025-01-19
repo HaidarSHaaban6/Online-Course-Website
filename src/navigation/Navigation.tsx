@@ -29,7 +29,7 @@ const Navigation = () => {
       path: "*",
       element: <NotFound />,
     },
-  ]);
+  ],{basename:"/Online-Course-Website"});
   return <RouterProvider router={router} />;
 };
 

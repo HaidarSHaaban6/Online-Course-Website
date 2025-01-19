@@ -13,31 +13,31 @@ const initialState: MarqueeState = {
   cards: [
     {
       id: 1,
-      card: "src/assets/img/marque/Card1.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card1.png",
     },
     {
       id: 2,
-      card: "src/assets/img/marque/Card2.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card2.png",
     },
     {
       id: 3,
-      card: "src/assets/img/marque/Card3.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card3.png",
     },
     {
       id: 4,
-      card: "src/assets/img/marque/Card4.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card4.png",
     },
     {
       id: 5,
-      card: "src/assets/img/marque/Card5.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card5.png",
     },
     {
       id: 6,
-      card: "src/assets/img/marque/Card6.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card6.png",
     },
     {
       id: 7,
-      card: "src/assets/img/marque/Card7.png",
+      card: "/Online-Course-Website/src/assets/img/marque/Card7.png",
     },
   ],
 };

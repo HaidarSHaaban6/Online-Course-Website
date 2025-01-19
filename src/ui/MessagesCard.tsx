@@ -2,25 +2,25 @@ import { useDispatch } from "react-redux";
 import {
   deleteContactInfo,
   MessagesInfo,
-} from "../redux/slice/contactFormSlice";
+} from "../redux/Slice/contactFormSlice";
 
 const MessagesCard = ({ id, contactInfo }: MessagesInfo) => {
   const dispatch = useDispatch();
   return (
-    <div className="bg-white rounded-xl lg:px-8 lg:py-7 px-6 py-5">
+    <div className="px-6 py-5 bg-white rounded-xl lg:px-8 lg:py-7">
       <div className="flex items-center font-vietnam mb-7">
         <div className="grow">
           <p className="text-lg">{contactInfo.subject}</p>
         </div>
         <div>
-          <p className="text-sm text-grey/15 font-semibold lg:text-base text-end">
+          <p className="text-sm font-semibold text-grey/15 lg:text-base text-end">
             {contactInfo.firstName} {contactInfo.lastName}
           </p>
           <p className="text-sm text-grey/30 text-end">{contactInfo.email}</p>
         </div>
       </div>
       <div className="border-b border-white/95 pb-7">
-        <p className="text-base font-semibold mb-3">Message:</p>
+        <p className="mb-3 text-base font-semibold">Message:</p>
         <p className="text-grey/30">{contactInfo.message}</p>
       </div>
       <div className="mt-7 text-end">

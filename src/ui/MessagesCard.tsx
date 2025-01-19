@@ -24,9 +24,6 @@ const MessagesCard = ({ id, contactInfo }: MessagesInfo) => {
         <p className="text-grey/30">{contactInfo.message}</p>
       </div>
       <div className="mt-7 text-end">
-        <button className="px-4 py-3.5 font-medium font-vietnam text-sm custom-2xl:text-lg bg-white/97 border border-white/95 rounded-md hover:cursor-pointer">
-          Reply
-        </button>
         <button
           className="px-4 py-3.5 font-medium font-vietnam text-white text-sm custom-2xl:text-lg bg-orange/50 rounded-md hover:cursor-pointer hover:bg-orange/70 duration-300 ml-4"
           onClick={() => dispatch(deleteContactInfo(id))}

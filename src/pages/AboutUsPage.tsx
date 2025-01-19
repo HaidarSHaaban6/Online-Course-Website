@@ -8,13 +8,15 @@ const AboutUsPage = () => {
   return (
     <div>
       <PageTitle title={AboutHead.title} description={AboutHead.description}/>
-     <div className="custom-container" >
+     <div id="Achievements" className="custom-container" >
       <AboutUsSection titleSec={AboutHead.title1} descriptionSec={AboutHead.description1} cards={Cards1} />
+      </div>
+      <div id="goal" className="custom-container" >
       <AboutUsSection titleSec={AboutHead.title2} descriptionSec={AboutHead.description2} cards={Cards2} />
+      </div>
       <AboutBanner background={AboutBannerData.background} word1={AboutBannerData.word1} line1={AboutBannerData.line1} line2={AboutBannerData.line2} btn={AboutBannerData.btn} />
      </div>
 
-    </div>
   )
 }
 

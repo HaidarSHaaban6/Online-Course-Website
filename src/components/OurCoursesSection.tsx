@@ -35,7 +35,7 @@ const OurCoursesSection = () => {
   }, [dispatch]);
 
   return (
-    <div className="custom-container mt-[50px] custom-xl:mt-[100px]">
+    <div id="courses" className="custom-container mt-[50px] custom-xl:mt-[100px]">
       <SectionTitle title={title} description={description}>
         <CustomButton btnText={btnText} functionality={handleBtnClick} />
       </SectionTitle>

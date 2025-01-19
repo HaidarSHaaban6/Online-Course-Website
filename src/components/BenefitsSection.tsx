@@ -58,7 +58,7 @@ const BenefitsSection = () => {
   };
 
   return (
-    <div className="custom-container mt-[50px] custom-xl:mt-[100px] custom-2xl:mt-[150px]">
+    <div id="benefits" className="custom-container mt-[50px] custom-xl:mt-[100px] custom-2xl:mt-[150px]">
       <SectionTitle title={title} description={description}>
         <CustomButton
           btnText={btnTextState ? "View Less" : "View All"}

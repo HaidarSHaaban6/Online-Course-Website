@@ -9,11 +9,8 @@ import VideoIconTag from "../ui/VideoIconTag";
 import videoFrame from '../assets/img/home_page_frame.png'
 import iconImg from '../assets/img/Abstract_Line.png'
 import PricingSection from "../components/PricingSection";
-import Footer from "../components/footer/Footer";
 
 const HomePage = () => {
- 
-
   return (
     <div >
       <Hero iconImg={iconImg} word1={HeroData.word1} line1={HeroData.line1} line2={HeroData.line2} 
@@ -33,3 +30,4 @@ const HomePage = () => {
   );
 };
 export default HomePage;
+

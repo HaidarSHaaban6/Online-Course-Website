@@ -11,7 +11,7 @@ const TetimonialsSection = () => {
   };
   const testimonialsCards = showMore ? testimonials: testimonials.slice(0, 4) ;
   return (
-    <div className="custom-container mt-[50px] lg:mt-[100px]">
+    <div id="testimoinals" className="custom-container mt-[50px] lg:mt-[100px]">
       <SectionTitle
         title={"Our Testimonials"}
         description={

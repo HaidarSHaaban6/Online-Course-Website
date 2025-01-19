@@ -9,6 +9,7 @@ import { contactInfoData } from "../data/contactinfo";
 import ContactInfoCard from "../ui/ContactInfoCard";
 import { useNavigate } from "react-router-dom";
 import ThankYouPop from "../ui/ThankYouPop";
+import useAOS from "../hooks/useAOS";
 
 const ContactSection = () => {
   const currentUser = useSelector((state: RootState) => state.auth.currentUser);
@@ -62,9 +63,9 @@ const ContactSection = () => {
   useEffect(() => {
     if (success) setTimeout(() => setSeccess(false), (duration + delay) * 1000);
   }, [success]);
-
+ useAOS();
   return (
-    <div className="mb-[50px] lg:mb-20 custom-2xl:mb-[150px]">
+    <div className="mb-[50px] lg:mb-20 custom-2xl:mb-[150px]" data-aos="fade-up">
       <ConfittiEffect
         count={300}
         widthVariations={widthVariations}

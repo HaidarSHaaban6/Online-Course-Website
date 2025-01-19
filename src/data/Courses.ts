@@ -29,7 +29,7 @@ export interface Lessons {
   lesson_title: string;
   lesson_number: string;
   lesson_duration: string;
-  current: boolean;
+  current?: boolean;
 }
 
 export const courses: Course[] = [

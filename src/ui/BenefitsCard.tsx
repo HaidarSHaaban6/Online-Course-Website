@@ -1,4 +1,5 @@
 import { MdArrowOutward } from "react-icons/md";
+import useAOS from "../hooks/useAOS";
 
 // Interface Section :
 interface BenefitsCardProps {
@@ -13,8 +14,10 @@ const BenefitsCard: React.FC<BenefitsCardProps> = ({
   title,
   description,
 }) => {
+  useAOS();
   return (
-    <div className="bg-white rounded-[10px] p-[30px] custom-xl:p-10 custom-2xl:rounded-xl custom-2xl:p-[50px] font-vietnam">
+    <div className="bg-white rounded-[10px] p-[30px] custom-xl:p-10 custom-2xl:rounded-xl custom-2xl:p-[50px] font-vietnam"
+    data-aos="fade-up">
       <p className="font-bold text-[50px] w-fit text-grey/15 mb-[30px] custom-xl:text-6xl custom-xl:mb-10 custom-2xl:text-[80px] custom-2xl:mb-[50px] ml-auto">
         {number}
       </p>

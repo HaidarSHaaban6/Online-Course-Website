@@ -9,10 +9,11 @@ import VideoIconTag from "../ui/VideoIconTag";
 import videoFrame from "../assets/img/home_page_frame.png";
 import iconImg from "../assets/img/Abstract_Line.png";
 import PricingSection from "../components/PricingSection";
-import Footer from "../components/footer/Footer";
 import TetimonialsSection from "../components/TetimonialsSection";
+import useAOS from '../hooks/useAOS';
 
 const HomePage = () => {
+  useAOS();
   return (
     <div>
       <Hero
@@ -25,12 +26,12 @@ const HomePage = () => {
         btn2={HeroData.btn2}
       />
 
-      <div className="custom-container">
+      <div className="custom-container" data-aos="fade-up">
         <MarqueSlider />
         <Video img={videoFrame} children={<VideoIconTag />} />
       </div>
 
-      <BenefitsSection />
+      <BenefitsSection  />
       <OurCoursesSection />
       <TetimonialsSection />
       <PricingSection />
@@ -39,3 +40,4 @@ const HomePage = () => {
   );
 };
 export default HomePage;
+

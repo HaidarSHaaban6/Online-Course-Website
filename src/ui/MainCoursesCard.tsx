@@ -1,6 +1,7 @@
 // Import Section :
 import { HiOutlineClock } from "react-icons/hi";
 import { Lessons } from "../data/Courses";
+import useAOS from "../hooks/useAOS";
 
 // Interface Section :
 interface MainCoursesCardProps {
@@ -14,6 +15,7 @@ const MainCoursesCard: React.FC<MainCoursesCardProps> = ({
   topic,
   info,
 }) => {
+  useAOS();
   return (
     <div className="p-[30px] lg:p-10 custom-2xl:p-[50px] font-vietnam bg-white rounded-[10px] custom-2xl:rounded-xl">
       <p className="font-bold text-[50px] mb-[30px] w-fit ml-auto lg:text-6xl lg:mb-10 custom-2xl:text-[80px] custom-2xl:mb-[50px] text-grey/15">
@@ -33,7 +35,7 @@ const MainCoursesCard: React.FC<MainCoursesCardProps> = ({
             }
             ${item.id == 3 ? "" : "mb-4 custom-2xl:mb-[20px]"}
             `}
-          >
+            data-aos="fade-up">
             <div className="mb-6 lg:mb-0">
               <p className="mb-[2px] font-medium text-grey/20 custom-2xl:text-xl custom-2xl:mb-[6px] w-fit">
                 {item.lesson_title}

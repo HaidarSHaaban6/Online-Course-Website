@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import useAOS from "../hooks/useAOS";
 
 interface HomeCoursesCardProps {
   id: number;
@@ -23,9 +24,10 @@ const HomeCoursesCard: React.FC<HomeCoursesCardProps> = ({
   const handleCourseButton = (id: number) => {
     navigate(`/courses/${id}`);
   };
-
+  useAOS();
   return (
-    <div className="custom-2xl:p-[50px] md:p-[40px] p-[24px] font-vietnam bg-white rounded-[10px] custom-2xl:rounded-xl">
+    <div className="custom-2xl:p-[50px] md:p-[40px] p-[24px] font-vietnam bg-white rounded-[10px] custom-2xl:rounded-xl"
+    data-aos="fade-up">
       <img
         src={img}
         alt="course image"

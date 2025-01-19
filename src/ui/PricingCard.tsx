@@ -1,6 +1,7 @@
 import { IoMdCheckmark } from "react-icons/io";
 import { Features } from "../data/Pricing";
 import { IoClose } from "react-icons/io5";
+import useAOS from "../hooks/useAOS";
 
 interface PricingCardProp {
   title: string;
@@ -17,13 +18,14 @@ const PricingCard: React.FC<PricingCardProp> = ({
   available,
   features,
 }) => {
+  useAOS();
   return (
     <div
       className=" bg-white/99 border-1 rounded-xl font-vietnam md:my-0 my-[30px] 
     px-5 custom-xl:px-6 custom-2xl:px-[30px] 
     pb-5 custom-xl:pb-6 custom-2xl:pb-[30px] 
     pt-[30px] custom-xl:pt-10 custom-2xl:pt-[50px]"
-    >
+    data-aos="fade-up">
       <div className="bg-orange/97 border-1 border-orange/90 px-[22px] text-center font-medium text-grey/15 custom-2xl:py-3 custom-2xl:rounded-md custom-2xl:text-[22px] custom-2xl:leading-[37px] lg:py-[10px] lg:text-lg lg:leading-[30px] py-2 rounded text-base leading-7">
         {title}
       </div>

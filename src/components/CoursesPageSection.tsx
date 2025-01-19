@@ -7,6 +7,7 @@ import { RootState } from "../redux/store";
 import SectionTitle from "../ui/SectionTitle";
 import CustomButton from "../ui/CustomButton";
 import { useNavigate } from "react-router-dom";
+import useAOS from "../hooks/useAOS";
 
 // CoursePageSection Component
 const CoursePageSection = () => {
@@ -29,7 +30,7 @@ const CoursePageSection = () => {
   const handleButton = (id: number) => {
     navigate(`/courses/${id}`);
   };
-
+ useAOS();
   return (
     <>
       <PageTitle title={title} description={description} />
@@ -42,7 +43,7 @@ const CoursePageSection = () => {
                 ? "mb-[50px] custom-xl:mb-[100px] custom-2xl:mb-[150px]"
                 : "mb-5 custom-xl:mb-10 custom-2xl:mb-[50px]"
             }`}
-          >
+            data-aos="fade-up">
             <SectionTitle
               title={course.course_title}
               description={course.description}

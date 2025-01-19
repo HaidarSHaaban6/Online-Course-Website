@@ -135,6 +135,9 @@ const coursesSlice = createSlice({
           description: course.description,
           image1: course.image1,
           curriclum: course.curriclum,
+          course_duration: course.course_duration,
+          level: course.level,
+          author: course.author,
         };
       } else {
         state.openCourse = null; // Set openCourse to null if not found

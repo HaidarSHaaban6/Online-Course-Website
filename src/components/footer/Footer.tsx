@@ -27,7 +27,7 @@ const Footer = () => {
 
             </ul>
           </div>
-          <div className="flex md:flex-nowrap flex-wrap sm:justify-evenly justify-start items-start sm:w-3/5  custom-2xl:gap-[14px] gap-[10px] sm:my-0 my-2">
+          <div className="flex sm:flex-nowrap flex-wrap sm:justify-evenly justify-start items-start sm:w-3/5 w-full gap-[30px] sm:my-0 my-2">
             <FooterList>
               <ul className=" ">
                 <li className=" font-semibold custom-2xl:text-xl custom-2xl:leading-[30px] text-lg text-grey/15 "><NavLink to={'/'}>Home</NavLink></li>

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import ColorPickerService from "../Services/ColorPickerService";
 import { useRef, useState } from "react";
-import { logUserOut } from "../redux/slice/authenticationSlice";
+import { logUserOut } from "../redux/Slice/authenticationSlice";
 import { IoCloseOutline } from "react-icons/io5";
 
 export interface LinkData {
@@ -44,10 +44,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
             lg:flex-row lg:relative lg:h-fit lg:flex lg:justify-start lg:translate-x-0`}
             >
               <IoCloseOutline
-                className="
-              absolute top-10 right-10 text-4xl
-              lg:hidden
-              "
+                className="absolute text-4xl  top-10 right-10 lg:hidden"
                 onClick={() => setNavShow(!navShow)}
               />
               {links.map((element, index) => (
@@ -73,7 +70,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
           <div className="flex items-center">
             {currentUser ? (
               <div className="flex items-center gap-x-5">
-                <p className="text-base text-grey/15 font-semibold hidden md:block">
+                <p className="hidden text-base font-semibold text-grey/15 md:block">
                   {currentUser.fullName}
                 </p>
                 <div
@@ -110,8 +107,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
               <>
                 <Link
                   to="/signUp"
-                  className="text-grey/15 pr-5 text-sm font-vietnam
-              lg:pr-8"
+                  className="pr-5 text-sm text-grey/15 font-vietnam lg:pr-8"
                 >
                   Sign Up
                 </Link>
@@ -127,7 +123,7 @@ const NavBar = ({ logo, links }: NavBarProps) => {
               </>
             )}
             <HiMenuAlt3
-              className="text-3xl ml-5 lg:hidden"
+              className="ml-5 text-3xl lg:hidden"
               onClick={() => setNavShow(!navShow)}
             />
           </div>

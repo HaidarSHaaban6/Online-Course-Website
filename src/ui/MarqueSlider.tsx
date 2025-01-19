@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectMarqueeCards } from "../redux/slice/marqueeSlice";
+import { selectMarqueeCards } from "../redux/Slice/marqueeSlice";
 
 const MarqueSlider = () => {
     const cards = useSelector(selectMarqueeCards);
@@ -13,12 +13,12 @@ const MarqueSlider = () => {
       {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 sm:w-auto w-2/5  border-x-1  rounded-lg  "
+            className="flex-shrink-0 w-2/5 rounded-lg sm:w-auto border-x-1 "
           >
             <img
               src={card.card}
               alt={`Card ${card.id}`}
-              className="w-full  h-full object-cover  rounded-lg "
+              className="object-cover w-full h-full rounded-lg "
             />
           </div>
         ))}
@@ -27,12 +27,12 @@ const MarqueSlider = () => {
         {cards.map((card) => (
           <div
             key={`duplicate-${card.id}`}
-            className="flex-shrink-0 sm:w-auto w-2/5 border-x-1 rounded-lg "
+            className="flex-shrink-0 w-2/5 rounded-lg sm:w-auto border-x-1 "
           >
             <img
               src={card.card}
               alt={`Duplicate Card ${card.id}`}
-              className=" w-full h-full  object-cover  rounded-lg"
+              className="object-cover w-full h-full rounded-lg "
             />
           </div>
         ))}

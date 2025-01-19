@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { useNavigate } from "react-router-dom";
 import Checkbox from "../ui/Checkbox";
-import { registerUser, resetErrors } from "../redux/slice/authenticationSlice";
+import { registerUser, resetErrors } from "../redux/Slice/authenticationSlice";
 
 export interface SignUpData {
   fullname: string;
@@ -98,7 +98,7 @@ const SignUpPage = () => {
               />
               <Checkbox<SignUpData>
                 text={
-                  <span className="font-vietnam text-base font-normal text-grey/40">
+                  <span className="text-base font-normal font-vietnam text-grey/40">
                     I agree with <span className="underline">Terms of Use</span>{" "}
                     and <span className="underline">Privacy Policy</span>
                   </span>

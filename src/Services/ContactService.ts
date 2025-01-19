@@ -1,4 +1,4 @@
-import { contactInfo } from "../redux/slice/contactFormSlice";
+import { contactInfo } from "../redux/Slice/contactFormSlice";
 import AuthService from "./AuthService";
 
 class ContactService {

@@ -6,7 +6,7 @@ import Checkbox from "../ui/Checkbox";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { RootState } from "../redux/store";
-import { resetErrors, signUserIn } from "../redux/slice/authenticationSlice";
+import { resetErrors, signUserIn } from "../redux/Slice/authenticationSlice";
 
 export interface LogInData {
   email: string;
@@ -73,7 +73,7 @@ const LoginPage = () => {
           >
             <div className="flex flex-col gap-y-5 custom-2xl:gap-y-6">
               {logInError && (
-                <p className="font-vietnam text-base font-normal text-red-500">
+                <p className="text-base font-normal text-red-500 font-vietnam">
                   {logInError}
                 </p>
               )}
@@ -100,7 +100,7 @@ const LoginPage = () => {
               </p>
               <Checkbox<LogInData>
                 text={
-                  <p className="font-vietnam text-base font-normal text-grey/40">
+                  <p className="text-base font-normal font-vietnam text-grey/40">
                     Remember Me
                   </p>
                 }

@@ -1385,18 +1385,6 @@ video {
   gap: 30px;
 }
 
-.gap-\[100px\] {
-  gap: 100px;
-}
-
-.gap-\[14px\] {
-  gap: 14px;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1601,11 +1589,6 @@ video {
 .bg-white\/99 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 253 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cover {
@@ -2907,10 +2890,6 @@ video {
     gap: 120px;
   }
 
-  .custom-2xl\:gap-\[14px\] {
-    gap: 14px;
-  }
-
   .custom-2xl\:gap-\[30px\] {
     gap: 30px;
   }
@@ -2921,10 +2900,6 @@ video {
 
   .custom-2xl\:gap-\[95px\] {
     gap: 95px;
-  }
-
-  .custom-2xl\:gap-\[100px\] {
-    gap: 100px;
   }
 
   .custom-2xl\:gap-x-3\.5 {

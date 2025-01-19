@@ -881,20 +881,12 @@ video {
   bottom: -3.5rem;
 }
 
-.-bottom-8 {
-  bottom: -2rem;
-}
-
 .-left-4 {
   left: -1rem;
 }
 
 .-right-48 {
   right: -12rem;
-}
-
-.-right-20 {
-  right: -5rem;
 }
 
 .-top-6 {
@@ -2592,16 +2584,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
-  .xl\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
   .xl\:mb-0 {
     margin-bottom: 0px;
   }

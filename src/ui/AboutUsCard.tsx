@@ -1,8 +1,11 @@
 import { AboutCard } from "../data/about";
+import useAOS from "../hooks/useAOS";
 
 const AboutUsCard = ({ icon: Icon, cardtitle, subtitle }: AboutCard) => {
+  useAOS();
   return (
-    <div className="bg-white custom-2xl:p-[50px] custom-2xl:rounded-xl lg:p-10 p-[30px] rounded-[10px] font-vietnam">
+    <div className="bg-white custom-2xl:p-[50px] custom-2xl:rounded-xl lg:p-10 p-[30px] rounded-[10px] font-vietnam"
+    data-aos="fade-up">
       <div className="flex justify-start items-center my-[14px]">
             <div className="bg-orange/97 border-1 border-orange/90 text-2xl text-orange/50 custom-2xl:p-4 custom-2xl:rounded-lg p-[14px]  rounded-md ">
               <Icon />

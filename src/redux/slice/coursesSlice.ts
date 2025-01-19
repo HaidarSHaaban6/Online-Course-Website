@@ -7,7 +7,7 @@ interface Lesson {
   lesson_title: string;
   lesson_number: string;
   lesson_duration: string;
-  current: boolean;
+  current?: boolean;
 }
 
 // Define The Data Structure For Lessons Info

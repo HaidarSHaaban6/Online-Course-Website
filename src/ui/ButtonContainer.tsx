@@ -28,7 +28,6 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
     setIsPrimaryActive(false);
     onSecondaryButtonClick();
   };
-  
 
   return isReversed ? (
     <div>
@@ -51,7 +50,7 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
         onClick={handlePrimaryClick}
         className={`font-semibold w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm ${
           isPrimaryActive
-            ? "text-white rounded-md bg-orange/50"
+            ? "text-white rounded-md bg-orange/50 transition-colors hover:bg-orange/70"
             : "text-grey/30"
         }`}
       >
@@ -61,7 +60,7 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
         onClick={handleSecondaryClick}
         className={`font-semibold text-grey/30 w-fit custom-2xl:px-[30px] custom-2xl:py-[14px] px-6 py-3 custom-2xl:text-lg text-sm ${
           !isPrimaryActive
-            ? "text-white rounded-md bg-orange/50"
+            ? "text-white rounded-md bg-orange/50 transition-colors hover:bg-orange/70"
             : "text-grey/30"
         }`}
       >

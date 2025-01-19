@@ -12,6 +12,7 @@ import {
 import BenefitsCard from "../ui/BenefitsCard";
 
 const BenefitsSection = () => {
+  
   // Define Constants
   const title = "Benefits";
   const description =
@@ -73,6 +74,7 @@ const BenefitsSection = () => {
               number={String(benefit.id)}
               title={benefit.title}
               description={benefit.description}
+              
             />
           ))
         ) : (

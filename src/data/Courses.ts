@@ -1,3 +1,25 @@
+import img1 from "./../assets/img/Courses/image2.png" ;
+import img2 from "./../assets/img/Courses/image1.png" ;
+import img3 from "./../assets/img/Courses/image.png" ;
+import img4 from "./../assets/img/Courses/image3.png" ;
+import img5 from "./../assets/img/Courses/image4.png" ;
+import img6 from "./../assets/img/Courses/image5.png" ;
+import img7 from "./../assets/img/Courses/image6.png" ;
+import img8 from "./../assets/img/Courses/image7.png" ;
+import img9 from "./../assets/img/Courses/image8.png" ;
+import img10 from "./../assets/img/Courses/image11.png" ;
+import img11 from "./../assets/img/Courses/image10.png" ;
+import img12 from "./../assets/img/Courses/image9.png" ;
+import img13 from "./../assets/img/Courses/image12.png" ;
+import img14 from "./../assets/img/Courses/Image13.png" ;
+import img15 from "./../assets/img/Courses/image14.png" ;
+import img16 from "./../assets/img/Courses/image15.png" ;
+import img17 from "./../assets/img/Courses/image16.png" ;
+import img18 from "./../assets/img/Courses/image.png" ;
+import img19 from "./../assets/img/Courses/image5.png" ;
+import img20 from "./../assets/img/Courses/image7.png" ;
+import img21 from "./../assets/img/Courses/image10.png" ;
+
 interface Course {
   id: number;
   course_title: string;
@@ -41,9 +63,9 @@ export const courses: Course[] = [
     course_duration: "4 Weeks",
     level: level.Beginner,
     author: "By John Smith",
-    image1: "src/assets/img/Courses/image2.png",
-    image2: "src/assets/img/Courses/image1.png",
-    image3: "src/assets/img/Courses/image.png",
+    image1: img1,
+    image2: img2,
+    image3: img3,
     curriclum: [
       {
         id: 1,
@@ -195,9 +217,9 @@ export const courses: Course[] = [
     course_duration: "6 Weeks",
     level: level.Intermediate,
     author: "By Emily Johnson",
-    image1: "src/assets/img/Courses/image3.png",
-    image2: "src/assets/img/Courses/image4.png",
-    image3: "src/assets/img/Courses/image5.png",
+    image1: img4,
+    image2: img5,
+    image3: img6,
     curriclum: [
       {
         id: 1,
@@ -349,9 +371,9 @@ export const courses: Course[] = [
     course_duration: "8 Weeks",
     level: level.Intermediate,
     author: "By David Brown",
-    image1: "src/assets/img/Courses/image6.png",
-    image2: "src/assets/img/Courses/image7.png",
-    image3: "src/assets/img/Courses/image8.png",
+    image1: img7,
+    image2: img8,
+    image3: img9,
     curriclum: [
       {
         id: 1,
@@ -504,9 +526,9 @@ export const courses: Course[] = [
     course_duration: "10 Weeks",
     level: level.Beginner,
     author: "By Sarah Thompson",
-    image1: "src/assets/img/Courses/image11.png",
-    image2: "src/assets/img/Courses/image10.png",
-    image3: "src/assets/img/Courses/image9.png",
+    image1: img10,
+    image2: img11,
+    image3: img12,
     curriclum: [
       {
         id: 1,
@@ -658,9 +680,9 @@ export const courses: Course[] = [
     course_duration: "10 Weeks",
     level: level.Intermediate,
     author: "By Michael Adams",
-    image1: "src/assets/img/Courses/image12.png",
-    image2: "src/assets/img/Courses/image13.png",
-    image3: "src/assets/img/Courses/image14.png",
+    image1: img13,
+    image2: img14,
+    image3: img15,
     curriclum: [
       {
         id: 1,
@@ -812,9 +834,9 @@ export const courses: Course[] = [
     course_duration: "6 Weeks",
     level: level.Advanced,
     author: "By Jennifer Wilson",
-    image1: "src/assets/img/Courses/image15.png",
-    image2: "src/assets/img/Courses/image16.png",
-    image3: "src/assets/img/Courses/image.png",
+    image1: img16,
+    image2: img17,
+    image3: img18,
     curriclum: [
       {
         id: 1,
@@ -966,9 +988,9 @@ export const courses: Course[] = [
     course_duration: "12 Weeks",
     level: level.Advanced,
     author: "By Axl Rose",
-    image1: "src/assets/img/Courses/image5.png",
-    image2: "src/assets/img/Courses/image7.png",
-    image3: "src/assets/img/Courses/image10.png",
+    image1: img19,
+    image2: img20,
+    image3: img21,
     curriclum: [
       {
         id: 1,

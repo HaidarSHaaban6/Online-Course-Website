@@ -3,6 +3,7 @@ import CustomButton from "../ui/CustomButton";
 import { useState } from "react";
 import { testimonials } from "../data/testimonials";
 import TestimonialsCard from "../ui/TestimonialsCard";
+import useAOS from "../hooks/useAOS";
 
 const TetimonialsSection = () => {
   const [showMore, setShowMore] = useState(false);
@@ -10,6 +11,7 @@ const TetimonialsSection = () => {
     setShowMore(!showMore);
   };
   const testimonialsCards = showMore ? testimonials: testimonials.slice(0, 4) ;
+  useAOS();
   return (
     <div id="testimoinals" className="custom-container mt-[50px] lg:mt-[100px]">
       <SectionTitle
@@ -23,7 +25,7 @@ const TetimonialsSection = () => {
           functionality={handleShowMore}
         />
       </SectionTitle>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]"data-aos="fade-up">
         {testimonialsCards.map((element, index) => (
           <TestimonialsCard
             key={index}

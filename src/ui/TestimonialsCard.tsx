@@ -1,4 +1,3 @@
-import useAOS from "../hooks/useAOS";
 
 interface TestimonialsCardProps {
   name: string;
@@ -8,10 +7,10 @@ interface TestimonialsCardProps {
 }
 
 const TestimonialsCard = ({ name, review, photo, className }: TestimonialsCardProps) => {
-  useAOS();
+  
   return (
     <div className={"bg-white border border-white/95 rounded-[10px] overflow-hidden duration-700 "+ className}
-    data-aos="fade-up">
+    >
       <div className="p-[30px] custom-2xl:p-[50px] custom-xl:p-10">
         <p className="text-grey/30 font-vietnam text-sm sm:text-base custom-2xl:text-lg">{review}</p>
       </div>
